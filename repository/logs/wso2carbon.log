@@ -1,0 +1,1187 @@
+TID: [] [] [2025-07-25 00:14:57,031]  INFO {org.wso2.carbon.core.multitenancy.utils.TenantAxisUtils} - Starting to clean tenant : tenant1.com
+TID: [] [] [2025-07-25 00:14:57,037]  INFO {org.wso2.carbon.mediation.initializer.multitenancy.TenantServiceBusInitializer} - Shutting down the persistence manager for the tenant: tenant1.com
+TID: [] [] [2025-07-25 00:14:57,085]  INFO {org.wso2.carbon.core.multitenancy.utils.TenantAxisUtils} - Cleaned up tenant tenant1.com
+TID: [] [] [2025-07-25 08:30:31,173] ERROR {org.wso2.carbon.databridge.agent.endpoint.DataEndpointConnectionWorker} - Error while trying to connect to the endpoint. Cannot borrow client for ssl://192.168.31.65:9711 org.wso2.carbon.databridge.agent.exception.DataEndpointAuthenticationException: Cannot borrow client for ssl://192.168.31.65:9711
+	at org.wso2.carbon.databridge.agent.endpoint.DataEndpointConnectionWorker.connect(DataEndpointConnectionWorker.java:210)
+	at org.wso2.carbon.databridge.agent.endpoint.DataEndpointConnectionWorker.runConnection(DataEndpointConnectionWorker.java:67)
+	at org.wso2.carbon.databridge.agent.endpoint.DataEndpoint.connect(DataEndpoint.java:165)
+	at org.wso2.carbon.databridge.agent.endpoint.DataEndpointGroup$ReconnectionTask.run(DataEndpointGroup.java:455)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.wso2.carbon.databridge.agent.exception.DataEndpointException: Error while opening socket to 192.168.31.65:9711. Network is unreachable (connect failed)
+	at org.wso2.carbon.databridge.agent.endpoint.binary.BinarySecureClientPoolFactory.createClient(BinarySecureClientPoolFactory.java:75)
+	at org.wso2.carbon.databridge.agent.client.AbstractClientPoolFactory.makeObject(AbstractClientPoolFactory.java:39)
+	at org.apache.commons.pool.impl.GenericKeyedObjectPool.borrowObject(GenericKeyedObjectPool.java:1212)
+	at org.wso2.carbon.databridge.agent.endpoint.DataEndpointConnectionWorker.connect(DataEndpointConnectionWorker.java:200)
+	... 4 more
+Caused by: java.net.SocketException: Network is unreachable (connect failed)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:305)
+	at java.base/sun.security.ssl.SSLSocketImpl.<init>(SSLSocketImpl.java:164)
+	at java.base/sun.security.ssl.SSLSocketFactoryImpl.createSocket(SSLSocketFactoryImpl.java:88)
+	at org.wso2.carbon.databridge.agent.endpoint.binary.BinarySecureClientPoolFactory.createClient(BinarySecureClientPoolFactory.java:58)
+	... 7 more
+
+TID: [-1234] [oauth2] [2025-07-25 08:30:31,173] ERROR {org.wso2.carbon.databridge.agent.endpoint.DataEndpointConnectionWorker} - Error while trying to connect to the endpoint. Cannot borrow client for ssl://192.168.31.65:9711 org.wso2.carbon.databridge.agent.exception.DataEndpointAuthenticationException: Cannot borrow client for ssl://192.168.31.65:9711
+	at org.wso2.carbon.databridge.agent.endpoint.DataEndpointConnectionWorker.connect(DataEndpointConnectionWorker.java:210)
+	at org.wso2.carbon.databridge.agent.endpoint.DataEndpointConnectionWorker.runConnection(DataEndpointConnectionWorker.java:67)
+	at org.wso2.carbon.databridge.agent.endpoint.DataEndpoint.connect(DataEndpoint.java:165)
+	at org.wso2.carbon.databridge.agent.endpoint.DataEndpointGroup$ReconnectionTask.run(DataEndpointGroup.java:455)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.wso2.carbon.databridge.agent.exception.DataEndpointException: Error while opening socket to 192.168.31.65:9711. Network is unreachable (connect failed)
+	at org.wso2.carbon.databridge.agent.endpoint.binary.BinarySecureClientPoolFactory.createClient(BinarySecureClientPoolFactory.java:75)
+	at org.wso2.carbon.databridge.agent.client.AbstractClientPoolFactory.makeObject(AbstractClientPoolFactory.java:39)
+	at org.apache.commons.pool.impl.GenericKeyedObjectPool.borrowObject(GenericKeyedObjectPool.java:1212)
+	at org.wso2.carbon.databridge.agent.endpoint.DataEndpointConnectionWorker.connect(DataEndpointConnectionWorker.java:200)
+	... 4 more
+Caused by: java.net.SocketException: Network is unreachable (connect failed)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:305)
+	at java.base/sun.security.ssl.SSLSocketImpl.<init>(SSLSocketImpl.java:164)
+	at java.base/sun.security.ssl.SSLSocketFactoryImpl.createSocket(SSLSocketFactoryImpl.java:88)
+	at org.wso2.carbon.databridge.agent.endpoint.binary.BinarySecureClientPoolFactory.createClient(BinarySecureClientPoolFactory.java:58)
+	... 7 more
+
+TID: [] [] [2025-07-25 08:30:31,173]  WARN {org.wso2.carbon.databridge.agent.endpoint.DataEndpointConnectionWorker} - Next Reconnection attempt to Data endpoint : tcp://192.168.31.65:9611 will be after 30 seconds
+TID: [-1234] [oauth2] [2025-07-25 08:30:31,173]  WARN {org.wso2.carbon.databridge.agent.endpoint.DataEndpointConnectionWorker} - Next Reconnection attempt to Data endpoint : tcp://192.168.31.65:9611 will be after 30 seconds
+TID: [] [] [2025-07-25 08:41:04,132]  INFO {org.wso2.carbon.databridge.core.DataBridge} - user admin connected
+TID: [] [] [2025-07-25 08:41:04,132]  INFO {org.wso2.carbon.databridge.core.DataBridge} - user admin connected
+TID: [-1234] [] [2025-07-25 09:15:11,303]  INFO {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} - 'admin@carbon.super [-1234]' logged in at [2025-07-25 09:15:11,303+0300]
+TID: [-1234] [] [2025-07-25 09:19:55,676] ERROR {org.wso2.carbon.identity.application.authentication.framework.handler.step.impl.DefaultStepHandler} - Authentication failed exception! java.net.ConnectException: Connection refused (Connection refused)
+TID: [-1234] [] [2025-07-25 09:20:05,517] ERROR {org.wso2.carbon.identity.application.authentication.framework.handler.step.impl.DefaultStepHandler} - Authentication failed exception! java.net.ConnectException: Connection refused (Connection refused)
+TID: [-1234] [logout] [2025-07-25 09:20:05,531] ERROR {org.apache.catalina.core.ContainerBase.[Catalina].[localhost].[/].[bridgeservlet]} - Servlet.service() for servlet [bridgeservlet] in context with path [/] threw exception org.apache.axis2.AxisFault
+	at org.apache.axis2.AxisFault.makeFault(AxisFault.java:430)
+	at org.wso2.carbon.core.transports.CarbonServlet.doGet(CarbonServlet.java:157)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.eclipse.equinox.http.servlet.internal.ServletRegistration.service(ServletRegistration.java:61)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.processAlias(ProxyServlet.java:128)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.service(ProxyServlet.java:68)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.wso2.carbon.tomcat.ext.servlet.DelegationServlet.service(DelegationServlet.java:68)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.owasp.csrfguard.CsrfGuardFilter.doFilter(CsrfGuardFilter.java:72)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:129)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.wso2.carbon.tomcat.ext.filter.CharacterSetFilter.doFilter(CharacterSetFilter.java:65)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:129)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.wso2.carbon.identity.context.rewrite.valve.TenantContextRewriteValve.invoke(TenantContextRewriteValve.java:119)
+	at org.wso2.carbon.identity.context.rewrite.valve.OrganizationContextRewriteValve.invoke(OrganizationContextRewriteValve.java:115)
+	at org.wso2.carbon.tomcat.ext.valves.SameSiteCookieValve.invoke(SameSiteCookieValve.java:38)
+	at org.wso2.carbon.identity.authz.valve.AuthorizationValve.invoke(AuthorizationValve.java:167)
+	at org.wso2.carbon.identity.auth.valve.AuthenticationValve.invoke(AuthenticationValve.java:118)
+	at org.wso2.carbon.tomcat.ext.valves.CompositeValve.continueInvocation(CompositeValve.java:106)
+	at org.wso2.carbon.tomcat.ext.valves.TomcatValveContainer.invokeValves(TomcatValveContainer.java:49)
+	at org.wso2.carbon.tomcat.ext.valves.CompositeValve.invoke(CompositeValve.java:69)
+	at org.wso2.carbon.tomcat.ext.valves.CarbonStuckThreadDetectionValve.invoke(CarbonStuckThreadDetectionValve.java:152)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+	at org.wso2.carbon.tomcat.ext.valves.CarbonContextCreatorValve.invoke(CarbonContextCreatorValve.java:63)
+	at org.wso2.carbon.tomcat.ext.valves.RequestCorrelationIdValve.invoke(RequestCorrelationIdValve.java:137)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:383)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:936)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.NullPointerException
+	at org.apache.synapse.api.ApiUtils.getFullRequestPath(ApiUtils.java:95)
+	at org.wso2.carbon.apimgt.gateway.handlers.DefaultAPIHandler.handleRequestInFlow_aroundBody0(DefaultAPIHandler.java:52)
+	at org.wso2.carbon.apimgt.gateway.handlers.DefaultAPIHandler.handleRequestInFlow(DefaultAPIHandler.java:1)
+	at org.apache.synapse.core.axis2.Axis2SynapseEnvironment.invokeHandlers(Axis2SynapseEnvironment.java:1230)
+	at org.apache.synapse.core.axis2.Axis2SynapseEnvironment.injectMessage(Axis2SynapseEnvironment.java:290)
+	at org.apache.synapse.core.axis2.SynapseMessageReceiver.receive(SynapseMessageReceiver.java:101)
+	at org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:180)
+	at org.apache.axis2.transport.http.util.RESTUtil.invokeAxisEngine(RESTUtil.java:144)
+	at org.apache.axis2.transport.http.util.RESTUtil.processURLRequest(RESTUtil.java:139)
+	at org.apache.axis2.transport.http.AxisServlet$RestRequestProcessor.processURLRequest(AxisServlet.java:852)
+	at org.wso2.carbon.core.transports.CarbonServlet.handleRestRequest(CarbonServlet.java:312)
+	at org.wso2.carbon.core.transports.CarbonServlet.doGet(CarbonServlet.java:154)
+	... 52 more
+
+TID: [-1234] [] [2025-07-25 09:21:51,574] ERROR {org.wso2.carbon.identity.application.authentication.framework.handler.step.impl.DefaultStepHandler} - Authentication failed exception! java.net.ConnectException: Connection refused (Connection refused)
+TID: [-1234] [] [2025-07-25 09:51:35,114]  INFO {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} - 'admin@carbon.super [-1234]' logged in at [2025-07-25 09:51:35,113+0300]
+TID: [] [] [2025-07-25 09:55:26,856]  INFO {org.wso2.carbon.databridge.core.DataBridge} - user admin connected
+TID: [-1234] [] [2025-07-25 09:55:26,864]  INFO {org.wso2.carbon.identity.entitlement.policy.finder.CarbonPolicyFinder} - Initializing of policy store is started at :  Fri Jul 25 09:55:26 MSK 2025
+TID: [-1234] [] [2025-07-25 09:55:26,865]  INFO {org.wso2.carbon.identity.entitlement.policy.store.DefaultPolicyDataStore} - Using Global policy combining algorithm that is defined in configuration file.
+TID: [-1234] [] [2025-07-25 09:55:26,865]  INFO {org.wso2.carbon.identity.entitlement.policy.finder.CarbonPolicyFinder} - Start retrieving policies from org.wso2.carbon.identity.entitlement.policy.store.RegistryPolicyStoreManageModule@7b659f13 at : Fri Jul 25 09:55:26 MSK 2025
+TID: [-1234] [] [2025-07-25 09:55:26,865]  INFO {org.wso2.carbon.identity.entitlement.policy.finder.CarbonPolicyFinder} - Finish retrieving policies from org.wso2.carbon.identity.entitlement.policy.store.RegistryPolicyStoreManageModule@7b659f13 at : Fri Jul 25 09:55:26 MSK 2025
+TID: [-1234] [] [2025-07-25 09:55:26,865]  INFO {org.wso2.carbon.identity.entitlement.policy.finder.CarbonPolicyFinder} - Initializing of policy store is finished at :  Fri Jul 25 09:55:26 MSK 2025
+TID: [-1234] [] [2025-07-25 09:55:26,866]  INFO {org.wso2.carbon.identity.entitlement.policy.finder.CarbonPolicyFinder} - Initializing of policy store is started at :  Fri Jul 25 09:55:26 MSK 2025
+TID: [-1234] [] [2025-07-25 09:55:26,866]  INFO {org.wso2.carbon.identity.entitlement.policy.store.DefaultPolicyDataStore} - Using Global policy combining algorithm that is defined in configuration file.
+TID: [-1234] [] [2025-07-25 09:55:26,866]  INFO {org.wso2.carbon.identity.entitlement.policy.finder.CarbonPolicyFinder} - Start retrieving policies from org.wso2.carbon.identity.entitlement.policy.store.RegistryPolicyStoreManageModule@7b659f13 at : Fri Jul 25 09:55:26 MSK 2025
+TID: [-1234] [] [2025-07-25 09:55:26,866]  INFO {org.wso2.carbon.identity.entitlement.policy.finder.CarbonPolicyFinder} - Finish retrieving policies from org.wso2.carbon.identity.entitlement.policy.store.RegistryPolicyStoreManageModule@7b659f13 at : Fri Jul 25 09:55:26 MSK 2025
+TID: [-1234] [] [2025-07-25 09:55:26,866]  INFO {org.wso2.carbon.identity.entitlement.policy.finder.CarbonPolicyFinder} - Initializing of policy store is finished at :  Fri Jul 25 09:55:26 MSK 2025
+TID: [-1234] [] [2025-07-25 09:55:26,870]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} - Permission cache updated for tenant -1234
+TID: [-1234] [] [2025-07-25 09:55:35,314]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} - Permission cache updated for tenant -1234
+TID: [-1234] [] [2025-07-25 09:59:49,777]  INFO {org.wso2.carbon.core.services.authentication.AuthenticationAdmin} - 'admin@carbon.super [-1234]' logged out at [2025-07-25 09:59:49,0775]
+TID: [-1234] [] [2025-07-25 10:01:00,876]  INFO {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} - 'admin@tenant1.com [1]' logged in at [2025-07-25 10:01:00,875+0300]
+TID: [-1234] [] [2025-07-25 10:01:00,878]  INFO {org.wso2.carbon.identity.tenant.resource.manager.TenantAwareAxis2ConfigurationContextObserver} - Loading configuration context for tenant domain: tenant1.com
+TID: [-1234] [] [2025-07-25 10:01:00,879]  INFO {org.wso2.carbon.core.multitenancy.TenantAxisConfigurator} - Creating tenant AxisConfiguration for tenant: tenant1.com[1]
+TID: [-1234] [] [2025-07-25 10:01:00,953]  INFO {org.wso2.carbon.identity.user.store.configuration.deployer.UserStoreConfigurationDeployer} - User Store Configuration Deployer initiated.
+TID: [-1234] [] [2025-07-25 10:01:00,953]  INFO {org.wso2.carbon.identity.user.store.configuration.deployer.UserStoreConfigurationDeployer} - User Store Configuration Deployer initiated.
+TID: [-1234] [] [2025-07-25 10:01:00,978]  INFO {org.wso2.carbon.mediation.initializer.multitenancy.TenantServiceBusInitializer} - Initializing the ESB Configuration for the tenant domain : tenant1.com
+TID: [-1234] [] [2025-07-25 10:01:00,980]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : main was added to the Synapse configuration successfully
+TID: [-1234] [] [2025-07-25 10:01:00,980]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : fault was added to the Synapse configuration successfully
+TID: [-1234] [] [2025-07-25 10:01:00,987]  INFO {org.apache.synapse.SynapseControllerFactory} - Using Synapse home : /Users/burzumjoy/Downloads/wso2am-4.5.0/repository/tenants/1
+TID: [-1234] [] [2025-07-25 10:01:00,987]  INFO {org.apache.synapse.SynapseControllerFactory} - Using synapse.xml location : /Users/burzumjoy/Downloads/wso2am-4.5.0/repository/tenants/1/synapse-configs/default
+TID: [-1234] [] [2025-07-25 10:01:00,987]  INFO {org.apache.synapse.SynapseControllerFactory} - Using server name : synapse.tenant1.com
+TID: [-1234] [] [2025-07-25 10:01:00,987]  INFO {org.apache.synapse.SynapseControllerFactory} - The timeout handler will run every : 15s
+TID: [-1234] [] [2025-07-25 10:01:00,988]  INFO {org.apache.synapse.Axis2SynapseController} - Initializing Synapse at : Fri Jul 25 10:01:00 MSK 2025
+TID: [-1234] [] [2025-07-25 10:01:00,988]  INFO {org.wso2.carbon.mediation.initializer.CarbonSynapseController} - Loading the mediation configuration from the file system
+TID: [-1234] [] [2025-07-25 10:01:00,988]  INFO {org.apache.synapse.config.xml.MultiXMLConfigurationBuilder} - Building synapse configuration from the synapse artifact repository at : /Users/burzumjoy/Downloads/wso2am-4.5.0/repository/tenants/1/synapse-configs/default
+TID: [-1234] [] [2025-07-25 10:01:00,989]  INFO {org.apache.synapse.config.xml.XMLConfigurationBuilder} - Generating the Synapse configuration model by parsing the XML configuration
+TID: [-1234] [] [2025-07-25 10:01:00,989]  INFO {org.wso2.carbon.mediation.ntask.NTaskTaskManager} - Initialized task manager. Tenant [1]
+TID: [-1234] [] [2025-07-25 10:01:00,990]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : fault was added to the Synapse configuration successfully
+TID: [-1234] [] [2025-07-25 10:01:00,990]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : main was added to the Synapse configuration successfully
+TID: [-1234] [] [2025-07-25 10:01:01,012]  WARN {org.wso2.carbon.apimgt.impl.factory.KeyManagerHolder} - Key Manager Resident Key Manager already initialized in tenant tenant1.com
+TID: [-1234] [] [2025-07-25 10:01:01,017]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : main was added to the Synapse configuration successfully
+TID: [-1234] [] [2025-07-25 10:01:01,018]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : _cors_request_handler_ was added to the Synapse configuration successfully
+TID: [-1234] [] [2025-07-25 10:01:01,055]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : _throttle_out_handler_ was added to the Synapse configuration successfully
+TID: [-1234] [] [2025-07-25 10:01:01,056]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : dispatchSeq was added to the Synapse configuration successfully
+TID: [-1234] [] [2025-07-25 10:01:01,056]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : outDispatchSeq was added to the Synapse configuration successfully
+TID: [-1234] [] [2025-07-25 10:01:01,060]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : _threat_fault_ was added to the Synapse configuration successfully
+TID: [-1234] [] [2025-07-25 10:01:01,060]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : _production_key_error_ was added to the Synapse configuration successfully
+TID: [-1234] [] [2025-07-25 10:01:01,060]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : _resource_mismatch_handler_ was added to the Synapse configuration successfully
+TID: [-1234] [] [2025-07-25 10:01:01,067]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : fault was added to the Synapse configuration successfully
+TID: [-1234] [] [2025-07-25 10:01:01,071]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : _opa_policy_failure_handler_ was added to the Synapse configuration successfully
+TID: [-1234] [] [2025-07-25 10:01:01,076]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : _backend_failure_handler_ was added to the Synapse configuration successfully
+TID: [-1234] [] [2025-07-25 10:01:01,079]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : webhooksFaultSequence was added to the Synapse configuration successfully
+TID: [-1234] [] [2025-07-25 10:01:01,099]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : _graphql_failure_handler was added to the Synapse configuration successfully
+TID: [-1234] [] [2025-07-25 10:01:01,102]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : _api_blocked_sequence_ was added to the Synapse configuration successfully
+TID: [-1234] [] [2025-07-25 10:01:01,105]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : _auth_failure_handler_ was added to the Synapse configuration successfully
+TID: [-1234] [] [2025-07-25 10:01:01,105]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : _sandbox_key_error_ was added to the Synapse configuration successfully
+TID: [-1234] [] [2025-07-25 10:01:01,106]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Inbound Endpoint : SecureWebhookServer was added to the Synapse configuration successfully
+TID: [-1234] [] [2025-07-25 10:01:01,106]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Inbound Endpoint : WebhookServer was added to the Synapse configuration successfully
+TID: [-1234] [] [2025-07-25 10:01:01,107]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Inbound Endpoint : SecureWebSocketEP was added to the Synapse configuration successfully
+TID: [-1234] [] [2025-07-25 10:01:01,107]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Inbound Endpoint : WebSocketInboundEndpoint was added to the Synapse configuration successfully
+TID: [-1234] [] [2025-07-25 10:01:01,107]  INFO {org.apache.synapse.config.SynapseConfigurationBuilder} - Loaded Synapse configuration from the artifact repository at : /Users/burzumjoy/Downloads/wso2am-4.5.0/repository/tenants/1/synapse-configs/default
+TID: [-1234] [] [2025-07-25 10:01:01,107]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Local entry : SERVER_HOST was added to the Synapse configuration successfully
+TID: [-1234] [] [2025-07-25 10:01:01,107]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Local entry : SERVER_IP was added to the Synapse configuration successfully
+TID: [-1234] [] [2025-07-25 10:01:01,109]  INFO {org.apache.synapse.Axis2SynapseController} - Loading mediator extensions...
+TID: [-1234] [] [2025-07-25 10:01:01,109]  INFO {org.apache.synapse.Axis2SynapseController} - Deploying the Synapse service...
+TID: [-1234] [] [2025-07-25 10:01:01,109]  INFO {org.apache.synapse.Axis2SynapseController} - Deploying Proxy services...
+TID: [-1234] [] [2025-07-25 10:01:01,109]  INFO {org.apache.synapse.Axis2SynapseController} - Deploying EventSources...
+TID: [-1234] [] [2025-07-25 10:01:01,109]  INFO {org.apache.synapse.inbound.InboundEndpoint} - Destroying Inbound Endpoint: WebSocketInboundEndpoint
+TID: [-1234] [] [2025-07-25 10:01:01,110]  INFO {org.apache.synapse.inbound.InboundEndpoint} - Destroying Inbound Endpoint: SecureWebSocketEP
+TID: [-1234] [] [2025-07-25 10:01:01,110]  INFO {org.apache.synapse.inbound.InboundEndpoint} - Destroying Inbound Endpoint: WebhookServer
+TID: [-1234] [] [2025-07-25 10:01:01,110]  INFO {org.apache.synapse.inbound.InboundEndpoint} - Destroying Inbound Endpoint: SecureWebhookServer
+TID: [-1234] [] [2025-07-25 10:01:01,110]  INFO {org.apache.synapse.inbound.InboundEndpoint} - Initializing Inbound Endpoint: WebSocketInboundEndpoint
+TID: [-1234] [] [2025-07-25 10:01:01,111]  INFO {org.wso2.carbon.inbound.endpoint.protocol.websocket.management.WebsocketEndpointManager} - Netty Listener already started on port 9099
+TID: [-1234] [] [2025-07-25 10:01:01,111]  INFO {org.apache.synapse.inbound.InboundEndpoint} - Initializing Inbound Endpoint: SecureWebSocketEP
+TID: [-1234] [] [2025-07-25 10:01:01,111]  INFO {org.wso2.carbon.inbound.endpoint.protocol.websocket.management.WebsocketEndpointManager} - Netty Listener already started on port 8099
+TID: [-1234] [] [2025-07-25 10:01:01,111]  INFO {org.apache.synapse.inbound.InboundEndpoint} - Initializing Inbound Endpoint: WebhookServer
+TID: [-1234] [] [2025-07-25 10:01:01,111]  INFO {org.wso2.carbon.inbound.endpoint.protocol.http.management.HTTPEndpointManager} - Listener is already started for port : 9021
+TID: [-1234] [] [2025-07-25 10:01:01,111]  INFO {org.apache.synapse.inbound.InboundEndpoint} - Initializing Inbound Endpoint: SecureWebhookServer
+TID: [-1234] [] [2025-07-25 10:01:01,111]  INFO {org.wso2.carbon.inbound.endpoint.protocol.http.management.HTTPEndpointManager} - Listener is already started for port : 8021
+TID: [-1234] [] [2025-07-25 10:01:01,112]  INFO {org.apache.synapse.ServerManager} - Server ready for processing...
+TID: [-1234] [] [2025-07-25 10:01:01,121]  INFO {org.wso2.carbon.apimgt.governance.impl.observer.APIMGovernanceConfigDeployer} - Starting to load default rulesets.
+TID: [-1234] [] [2025-07-25 10:01:01,128]  INFO {org.wso2.carbon.apimgt.governance.impl.util.APIMGovernanceUtil} - Ruleset WSO2 REST API Design Guidelines already exists in organization: tenant1.com; skipping.
+TID: [-1234] [] [2025-07-25 10:01:01,129]  INFO {org.wso2.carbon.apimgt.governance.impl.util.APIMGovernanceUtil} - Ruleset WSO2 API Management Guidelines already exists in organization: tenant1.com; skipping.
+TID: [-1234] [] [2025-07-25 10:01:01,130]  INFO {org.wso2.carbon.apimgt.governance.impl.util.APIMGovernanceUtil} - Ruleset OWASP Top 10 already exists in organization: tenant1.com; skipping.
+TID: [-1234] [] [2025-07-25 10:01:01,130]  INFO {org.wso2.carbon.apimgt.governance.impl.observer.APIMGovernanceConfigDeployer} - Starting to load default policies.
+TID: [-1234] [] [2025-07-25 10:01:01,131]  INFO {org.wso2.carbon.apimgt.governance.impl.util.APIMGovernanceUtil} - Policy WSO2 API Management Best Practices already exists in organization: tenant1.com; skipping.
+TID: [-1234] [] [2025-07-25 10:01:01,150]  INFO {org.wso2.carbon.apimgt.gateway.listeners.GatewayStartupListener} - Gateway policy artifacts deployed Successfully in the Gateway
+TID: [-1234] [] [2025-07-25 10:01:01,156]  INFO {org.wso2.carbon.apimgt.impl.certificatemgt.CertificateManagerImpl} - The Transport Sender will be re-initialized in few minutes.
+TID: [-1234] [] [2025-07-25 10:01:01,160]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} - Permission cache updated for tenant 1
+TID: [-1234] [] [2025-07-25 10:01:01,162]  INFO {org.wso2.carbon.apimgt.gateway.internal.TenantServiceCreator} - Initializing APIM TenantServiceCreator for the tenant domain : tenant1.com
+TID: [-1234] [] [2025-07-25 10:01:01,166]  INFO {org.wso2.carbon.core.multitenancy.utils.TenantAxisUtils} - Loaded tenant tenant1.com in 290 ms
+TID: [-1234] [] [2025-07-25 10:01:01,167]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Local entry : ga-config-key was added to the Synapse configuration successfully
+TID: [-1234] [] [2025-07-25 10:01:01,168]  INFO {org.wso2.carbon.apimgt.gateway.InMemoryAPIDeployer} - Deploying synapse artifacts of _JwksEndpoint_
+TID: [-1234] [] [2025-07-25 10:01:01,169]  INFO {org.apache.synapse.api.API} - {api:_JwksEndpoint_} Initializing API: _JwksEndpoint_
+TID: [-1234] [] [2025-07-25 10:01:01,171]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - API : _JwksEndpoint_ was added to the Synapse configuration successfully
+TID: [-1234] [internal/data/v1] [2025-07-25 10:01:01,179]  INFO {org.wso2.carbon.apimgt.impl.importexport.utils.CommonUtil} - Creation of folder is successful. Directory Name : test-1
+TID: [-1234] [internal/data/v1] [2025-07-25 10:01:01,180]  INFO {org.wso2.carbon.apimgt.impl.importexport.utils.CommonUtil} - Creation of folder is successful. Directory Name : Definitions
+TID: [-1234] [] [2025-07-25 10:01:01,430]  INFO {org.wso2.carbon.apimgt.gateway.InMemoryAPIDeployer} - Deploying synapse artifacts of API ID: 7085e562-9fc5-4b92-a7fd-73c47da26239 and Context: /t/tenant1.com/test/1
+TID: [-1234] [] [2025-07-25 10:01:01,432]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Local entry : 7085e562-9fc5-4b92-a7fd-73c47da26239 was added to the Synapse configuration successfully
+TID: [-1234] [] [2025-07-25 10:01:01,434]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Endpoint : test--v1_APIsandboxEndpoint was added to the Synapse configuration successfully
+TID: [-1234] [] [2025-07-25 10:01:01,435]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Endpoint : test--v1_APIproductionEndpoint was added to the Synapse configuration successfully
+TID: [-1234] [] [2025-07-25 10:01:01,437]  INFO {org.apache.synapse.api.API} - {api:test:v1} Initializing API: test:v1
+TID: [-1234] [] [2025-07-25 10:01:01,437]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - API : test:v1 was added to the Synapse configuration successfully
+TID: [-1234] [] [2025-07-25 10:01:01,438]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLSender} - PassThroughHttpSender reloading SSL Config..
+TID: [-1234] [] [2025-07-25 10:01:01,438]  INFO {org.wso2.carbon.apimgt.gateway.listeners.GatewayStartupListener} - Synapse Artifacts deployed Successfully in the Gateway
+TID: [-1234] [] [2025-07-25 10:01:01,464]  INFO {org.apache.synapse.transport.nhttp.config.ClientConnFactoryBuilder} - customSSLProfiles configuration is loaded from path: /Users/burzumjoy/Downloads/wso2am-4.5.0/repository/resources/security/sslprofiles.xml
+TID: [-1234] [] [2025-07-25 10:01:01,464]  INFO {org.apache.synapse.transport.nhttp.config.ClientConnFactoryBuilder} - HTTPS Loading custom SSL profiles for the HTTPS sender
+TID: [-1234] [] [2025-07-25 10:01:01,483]  INFO {org.apache.synapse.transport.nhttp.config.ClientConnFactoryBuilder} - HTTPS Custom SSL profiles initialized for 1 servers
+TID: [-1234] [] [2025-07-25 10:01:01,483]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLSender} - Pass-through HTTPS Sender updated with Dynamic Configuration Updates ...
+TID: [-1234] [devportal] [2025-07-25 10:04:36,785] ERROR {org.apache.jsp.services.refresh.refresh_jsp} - org.wso2.carbon.ui.filters.cache.ContentTypeBasedCachePreventionFilter$1@324241a0
+TID: [-1234] [api/am/devportal] [2025-07-25 10:04:36,791] ERROR {org.wso2.carbon.apimgt.rest.api.util.impl.OAuthOpaqueAuthenticatorImpl} - Invalid OAuth Token : Invalid Access Token. ACTIVE access token is not found.
+TID: [-1234] [api/am/devportal] [2025-07-25 10:04:36,791] ERROR {org.wso2.carbon.apimgt.rest.api.util.impl.OAuthOpaqueAuthenticatorImpl} - Provided access token is invalid
+TID: [-1234] [] [2025-07-25 10:08:16,131]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} - Permission cache updated for tenant -1234
+TID: [-1234] [] [2025-07-25 10:08:22,799]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} - Permission cache updated for tenant -1234
+TID: [-1234] [oauth2] [2025-07-25 10:09:24,239] ERROR {org.wso2.carbon.identity.application.authentication.framework.handler.sequence.impl.DefaultStepBasedSequenceHandler} - An External IdP cannot be null for a FederatedApplicationAuthenticator
+TID: [-1234] [oauth2] [2025-07-25 10:09:24,240] ERROR {org.wso2.carbon.identity.application.authentication.framework.handler.request.impl.DefaultRequestCoordinator} - Exception in Authentication Framework org.wso2.carbon.identity.application.authentication.framework.exception.FrameworkException: An External IdP cannot be null for a FederatedApplicationAuthenticator
+	at org.wso2.carbon.identity.application.authentication.framework.handler.sequence.impl.DefaultStepBasedSequenceHandler.handlePostAuthentication(DefaultStepBasedSequenceHandler.java:316)
+	at org.wso2.carbon.identity.application.authentication.framework.handler.sequence.impl.DefaultStepBasedSequenceHandler.handle(DefaultStepBasedSequenceHandler.java:204)
+	at org.wso2.carbon.identity.application.authentication.framework.handler.sequence.impl.GraphBasedSequenceHandler.handle(GraphBasedSequenceHandler.java:118)
+	at org.wso2.carbon.identity.application.authentication.framework.handler.request.impl.DefaultAuthenticationRequestHandler.handle(DefaultAuthenticationRequestHandler.java:191)
+	at org.wso2.carbon.identity.application.authentication.framework.handler.request.impl.DefaultRequestCoordinator.handle(DefaultRequestCoordinator.java:317)
+	at org.wso2.carbon.identity.application.authentication.framework.CommonAuthenticationHandler.doPost(CommonAuthenticationHandler.java:50)
+	at org.wso2.carbon.identity.application.authentication.framework.CommonAuthenticationHandler.doGet(CommonAuthenticationHandler.java:41)
+	at org.wso2.carbon.identity.oauth.endpoint.authz.OAuth2AuthzEndpoint.handleAuthFlowThroughFramework(OAuth2AuthzEndpoint.java:3315)
+	at org.wso2.carbon.identity.oauth.endpoint.authz.OAuth2AuthzEndpoint.handleInitialAuthorizationRequest(OAuth2AuthzEndpoint.java:1080)
+	at org.wso2.carbon.identity.oauth.endpoint.authz.OAuth2AuthzEndpoint.authorize(OAuth2AuthzEndpoint.java:286)
+	at jdk.internal.reflect.GeneratedMethodAccessor609.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:179)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:201)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:104)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:59)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:96)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:307)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:265)
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:234)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:208)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:160)
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:225)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:304)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doGet(AbstractHTTPServlet.java:222)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:279)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.wso2.carbon.webapp.mgt.filter.AuthorizationHeaderFilter.doFilter(AuthorizationHeaderFilter.java:85)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.wso2.carbon.ui.filters.cache.ContentTypeBasedCachePreventionFilter.doFilter(ContentTypeBasedCachePreventionFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:129)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.wso2.carbon.identity.context.rewrite.valve.TenantContextRewriteValve.invoke(TenantContextRewriteValve.java:119)
+	at org.wso2.carbon.identity.context.rewrite.valve.OrganizationContextRewriteValve.invoke(OrganizationContextRewriteValve.java:115)
+	at org.wso2.carbon.tomcat.ext.valves.SameSiteCookieValve.invoke(SameSiteCookieValve.java:38)
+	at org.wso2.carbon.identity.authz.valve.AuthorizationValve.invoke(AuthorizationValve.java:167)
+	at org.wso2.carbon.identity.auth.valve.AuthenticationValve.invoke(AuthenticationValve.java:118)
+	at org.wso2.carbon.tomcat.ext.valves.CompositeValve.continueInvocation(CompositeValve.java:106)
+	at org.wso2.carbon.tomcat.ext.valves.TomcatValveContainer.invokeValves(TomcatValveContainer.java:49)
+	at org.wso2.carbon.tomcat.ext.valves.CompositeValve.invoke(CompositeValve.java:69)
+	at org.wso2.carbon.tomcat.ext.valves.CarbonStuckThreadDetectionValve.invoke(CarbonStuckThreadDetectionValve.java:152)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+	at org.wso2.carbon.tomcat.ext.valves.CarbonContextCreatorValve.invoke(CarbonContextCreatorValve.java:63)
+	at org.wso2.carbon.tomcat.ext.valves.RequestCorrelationIdValve.invoke(RequestCorrelationIdValve.java:137)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:383)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:936)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+TID: [-1234] [] [2025-07-25 10:11:08,837] ERROR {org.wso2.carbon.identity.application.authentication.framework.handler.step.impl.DefaultStepHandler} - Authentication failed exception! java.net.ConnectException: Connection refused (Connection refused)
+TID: [-1234] [logout] [2025-07-25 10:11:08,850] ERROR {org.apache.catalina.core.ContainerBase.[Catalina].[localhost].[/].[bridgeservlet]} - Servlet.service() for servlet [bridgeservlet] in context with path [/] threw exception org.apache.axis2.AxisFault
+	at org.apache.axis2.AxisFault.makeFault(AxisFault.java:430)
+	at org.wso2.carbon.core.transports.CarbonServlet.doGet(CarbonServlet.java:157)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.eclipse.equinox.http.servlet.internal.ServletRegistration.service(ServletRegistration.java:61)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.processAlias(ProxyServlet.java:128)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.service(ProxyServlet.java:68)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.wso2.carbon.tomcat.ext.servlet.DelegationServlet.service(DelegationServlet.java:68)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.owasp.csrfguard.CsrfGuardFilter.doFilter(CsrfGuardFilter.java:72)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:129)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.wso2.carbon.tomcat.ext.filter.CharacterSetFilter.doFilter(CharacterSetFilter.java:65)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:129)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.wso2.carbon.identity.context.rewrite.valve.TenantContextRewriteValve.invoke(TenantContextRewriteValve.java:119)
+	at org.wso2.carbon.identity.context.rewrite.valve.OrganizationContextRewriteValve.invoke(OrganizationContextRewriteValve.java:115)
+	at org.wso2.carbon.tomcat.ext.valves.SameSiteCookieValve.invoke(SameSiteCookieValve.java:38)
+	at org.wso2.carbon.identity.authz.valve.AuthorizationValve.invoke(AuthorizationValve.java:167)
+	at org.wso2.carbon.identity.auth.valve.AuthenticationValve.invoke(AuthenticationValve.java:118)
+	at org.wso2.carbon.tomcat.ext.valves.CompositeValve.continueInvocation(CompositeValve.java:106)
+	at org.wso2.carbon.tomcat.ext.valves.TomcatValveContainer.invokeValves(TomcatValveContainer.java:49)
+	at org.wso2.carbon.tomcat.ext.valves.CompositeValve.invoke(CompositeValve.java:69)
+	at org.wso2.carbon.tomcat.ext.valves.CarbonStuckThreadDetectionValve.invoke(CarbonStuckThreadDetectionValve.java:152)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+	at org.wso2.carbon.tomcat.ext.valves.CarbonContextCreatorValve.invoke(CarbonContextCreatorValve.java:63)
+	at org.wso2.carbon.tomcat.ext.valves.RequestCorrelationIdValve.invoke(RequestCorrelationIdValve.java:137)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:383)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:936)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.NullPointerException
+	at org.apache.synapse.api.ApiUtils.getFullRequestPath(ApiUtils.java:95)
+	at org.wso2.carbon.apimgt.gateway.handlers.DefaultAPIHandler.handleRequestInFlow_aroundBody0(DefaultAPIHandler.java:52)
+	at org.wso2.carbon.apimgt.gateway.handlers.DefaultAPIHandler.handleRequestInFlow(DefaultAPIHandler.java:1)
+	at org.apache.synapse.core.axis2.Axis2SynapseEnvironment.invokeHandlers(Axis2SynapseEnvironment.java:1230)
+	at org.apache.synapse.core.axis2.Axis2SynapseEnvironment.injectMessage(Axis2SynapseEnvironment.java:290)
+	at org.apache.synapse.core.axis2.SynapseMessageReceiver.receive(SynapseMessageReceiver.java:101)
+	at org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:180)
+	at org.apache.axis2.transport.http.util.RESTUtil.invokeAxisEngine(RESTUtil.java:144)
+	at org.apache.axis2.transport.http.util.RESTUtil.processURLRequest(RESTUtil.java:139)
+	at org.apache.axis2.transport.http.AxisServlet$RestRequestProcessor.processURLRequest(AxisServlet.java:852)
+	at org.wso2.carbon.core.transports.CarbonServlet.handleRestRequest(CarbonServlet.java:312)
+	at org.wso2.carbon.core.transports.CarbonServlet.doGet(CarbonServlet.java:154)
+	... 52 more
+
+TID: [-1234] [] [2025-07-25 10:14:05,064]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} - Permission cache updated for tenant 1
+TID: [-1234] [oauth2] [2025-07-25 10:14:29,638] ERROR {org.wso2.carbon.identity.application.authentication.framework.handler.sequence.impl.DefaultStepBasedSequenceHandler} - An External IdP cannot be null for a FederatedApplicationAuthenticator
+TID: [-1234] [oauth2] [2025-07-25 10:14:29,638] ERROR {org.wso2.carbon.identity.application.authentication.framework.handler.request.impl.DefaultRequestCoordinator} - Exception in Authentication Framework org.wso2.carbon.identity.application.authentication.framework.exception.FrameworkException: An External IdP cannot be null for a FederatedApplicationAuthenticator
+	at org.wso2.carbon.identity.application.authentication.framework.handler.sequence.impl.DefaultStepBasedSequenceHandler.handlePostAuthentication(DefaultStepBasedSequenceHandler.java:316)
+	at org.wso2.carbon.identity.application.authentication.framework.handler.sequence.impl.DefaultStepBasedSequenceHandler.handle(DefaultStepBasedSequenceHandler.java:204)
+	at org.wso2.carbon.identity.application.authentication.framework.handler.sequence.impl.GraphBasedSequenceHandler.handle(GraphBasedSequenceHandler.java:118)
+	at org.wso2.carbon.identity.application.authentication.framework.handler.request.impl.DefaultAuthenticationRequestHandler.handle(DefaultAuthenticationRequestHandler.java:191)
+	at org.wso2.carbon.identity.application.authentication.framework.handler.request.impl.DefaultRequestCoordinator.handle(DefaultRequestCoordinator.java:317)
+	at org.wso2.carbon.identity.application.authentication.framework.CommonAuthenticationHandler.doPost(CommonAuthenticationHandler.java:50)
+	at org.wso2.carbon.identity.application.authentication.framework.CommonAuthenticationHandler.doGet(CommonAuthenticationHandler.java:41)
+	at org.wso2.carbon.identity.oauth.endpoint.authz.OAuth2AuthzEndpoint.handleAuthFlowThroughFramework(OAuth2AuthzEndpoint.java:3315)
+	at org.wso2.carbon.identity.oauth.endpoint.authz.OAuth2AuthzEndpoint.handleInitialAuthorizationRequest(OAuth2AuthzEndpoint.java:1080)
+	at org.wso2.carbon.identity.oauth.endpoint.authz.OAuth2AuthzEndpoint.authorize(OAuth2AuthzEndpoint.java:286)
+	at jdk.internal.reflect.GeneratedMethodAccessor609.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:179)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:201)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:104)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:59)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:96)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:307)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:265)
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:234)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:208)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:160)
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:225)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:304)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doGet(AbstractHTTPServlet.java:222)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:279)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.wso2.carbon.webapp.mgt.filter.AuthorizationHeaderFilter.doFilter(AuthorizationHeaderFilter.java:85)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.wso2.carbon.ui.filters.cache.ContentTypeBasedCachePreventionFilter.doFilter(ContentTypeBasedCachePreventionFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:129)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.wso2.carbon.identity.context.rewrite.valve.TenantContextRewriteValve.invoke(TenantContextRewriteValve.java:119)
+	at org.wso2.carbon.identity.context.rewrite.valve.OrganizationContextRewriteValve.invoke(OrganizationContextRewriteValve.java:115)
+	at org.wso2.carbon.tomcat.ext.valves.SameSiteCookieValve.invoke(SameSiteCookieValve.java:38)
+	at org.wso2.carbon.identity.authz.valve.AuthorizationValve.invoke(AuthorizationValve.java:167)
+	at org.wso2.carbon.identity.auth.valve.AuthenticationValve.invoke(AuthenticationValve.java:118)
+	at org.wso2.carbon.tomcat.ext.valves.CompositeValve.continueInvocation(CompositeValve.java:106)
+	at org.wso2.carbon.tomcat.ext.valves.TomcatValveContainer.invokeValves(TomcatValveContainer.java:49)
+	at org.wso2.carbon.tomcat.ext.valves.CompositeValve.invoke(CompositeValve.java:69)
+	at org.wso2.carbon.tomcat.ext.valves.CarbonStuckThreadDetectionValve.invoke(CarbonStuckThreadDetectionValve.java:152)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+	at org.wso2.carbon.tomcat.ext.valves.CarbonContextCreatorValve.invoke(CarbonContextCreatorValve.java:63)
+	at org.wso2.carbon.tomcat.ext.valves.RequestCorrelationIdValve.invoke(RequestCorrelationIdValve.java:137)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:383)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:936)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+TID: [-1234] [] [2025-07-25 10:15:43,922]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} - Permission cache updated for tenant -1234
+TID: [-1234] [] [2025-07-25 10:17:36,100]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} - Permission cache updated for tenant -1234
+TID: [-1234] [] [2025-07-25 10:18:38,278]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} - Permission cache updated for tenant 1
+TID: [-1234] [oauth2] [2025-07-25 10:18:45,331] ERROR {org.wso2.carbon.identity.application.authentication.framework.handler.sequence.impl.DefaultStepBasedSequenceHandler} - An External IdP cannot be null for a FederatedApplicationAuthenticator
+TID: [-1234] [oauth2] [2025-07-25 10:18:45,332] ERROR {org.wso2.carbon.identity.application.authentication.framework.handler.request.impl.DefaultRequestCoordinator} - Exception in Authentication Framework org.wso2.carbon.identity.application.authentication.framework.exception.FrameworkException: An External IdP cannot be null for a FederatedApplicationAuthenticator
+	at org.wso2.carbon.identity.application.authentication.framework.handler.sequence.impl.DefaultStepBasedSequenceHandler.handlePostAuthentication(DefaultStepBasedSequenceHandler.java:316)
+	at org.wso2.carbon.identity.application.authentication.framework.handler.sequence.impl.DefaultStepBasedSequenceHandler.handle(DefaultStepBasedSequenceHandler.java:204)
+	at org.wso2.carbon.identity.application.authentication.framework.handler.sequence.impl.GraphBasedSequenceHandler.handle(GraphBasedSequenceHandler.java:118)
+	at org.wso2.carbon.identity.application.authentication.framework.handler.request.impl.DefaultAuthenticationRequestHandler.handle(DefaultAuthenticationRequestHandler.java:191)
+	at org.wso2.carbon.identity.application.authentication.framework.handler.request.impl.DefaultRequestCoordinator.handle(DefaultRequestCoordinator.java:317)
+	at org.wso2.carbon.identity.application.authentication.framework.CommonAuthenticationHandler.doPost(CommonAuthenticationHandler.java:50)
+	at org.wso2.carbon.identity.application.authentication.framework.CommonAuthenticationHandler.doGet(CommonAuthenticationHandler.java:41)
+	at org.wso2.carbon.identity.oauth.endpoint.authz.OAuth2AuthzEndpoint.handleAuthFlowThroughFramework(OAuth2AuthzEndpoint.java:3315)
+	at org.wso2.carbon.identity.oauth.endpoint.authz.OAuth2AuthzEndpoint.handleInitialAuthorizationRequest(OAuth2AuthzEndpoint.java:1080)
+	at org.wso2.carbon.identity.oauth.endpoint.authz.OAuth2AuthzEndpoint.authorize(OAuth2AuthzEndpoint.java:286)
+	at jdk.internal.reflect.GeneratedMethodAccessor609.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:179)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:201)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:104)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:59)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:96)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:307)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:265)
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:234)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:208)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:160)
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:225)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:304)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doGet(AbstractHTTPServlet.java:222)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:279)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.wso2.carbon.webapp.mgt.filter.AuthorizationHeaderFilter.doFilter(AuthorizationHeaderFilter.java:85)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.wso2.carbon.ui.filters.cache.ContentTypeBasedCachePreventionFilter.doFilter(ContentTypeBasedCachePreventionFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:129)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.wso2.carbon.identity.context.rewrite.valve.TenantContextRewriteValve.invoke(TenantContextRewriteValve.java:119)
+	at org.wso2.carbon.identity.context.rewrite.valve.OrganizationContextRewriteValve.invoke(OrganizationContextRewriteValve.java:115)
+	at org.wso2.carbon.tomcat.ext.valves.SameSiteCookieValve.invoke(SameSiteCookieValve.java:38)
+	at org.wso2.carbon.identity.authz.valve.AuthorizationValve.invoke(AuthorizationValve.java:167)
+	at org.wso2.carbon.identity.auth.valve.AuthenticationValve.invoke(AuthenticationValve.java:118)
+	at org.wso2.carbon.tomcat.ext.valves.CompositeValve.continueInvocation(CompositeValve.java:106)
+	at org.wso2.carbon.tomcat.ext.valves.TomcatValveContainer.invokeValves(TomcatValveContainer.java:49)
+	at org.wso2.carbon.tomcat.ext.valves.CompositeValve.invoke(CompositeValve.java:69)
+	at org.wso2.carbon.tomcat.ext.valves.CarbonStuckThreadDetectionValve.invoke(CarbonStuckThreadDetectionValve.java:152)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+	at org.wso2.carbon.tomcat.ext.valves.CarbonContextCreatorValve.invoke(CarbonContextCreatorValve.java:63)
+	at org.wso2.carbon.tomcat.ext.valves.RequestCorrelationIdValve.invoke(RequestCorrelationIdValve.java:137)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:383)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:936)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+TID: [-1234] [] [2025-07-25 10:19:19,611]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} - Permission cache updated for tenant -1234
+TID: [-1234] [] [2025-07-25 10:19:27,380]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} - Permission cache updated for tenant -1234
+TID: [-1234] [] [2025-07-25 10:19:28,917]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} - Permission cache updated for tenant -1234
+TID: [-1234] [] [2025-07-25 10:19:29,729]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} - Permission cache updated for tenant -1234
+TID: [-1234] [] [2025-07-25 10:20:09,443]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} - Permission cache updated for tenant -1234
+TID: [-1234] [] [2025-07-25 10:22:39,574]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} - Permission cache updated for tenant -1234
+TID: [-1234] [] [2025-07-25 10:25:01,378]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} - Permission cache updated for tenant 1
+TID: [-1234] [] [2025-07-25 10:25:09,779]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} - Permission cache updated for tenant 1
+TID: [-1234] [] [2025-07-25 10:25:23,729]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} - Permission cache updated for tenant -1234
+TID: [-1234] [] [2025-07-25 10:25:58,497]  INFO {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} - 'admin@tenant1.com [1]' logged in at [2025-07-25 10:25:58,497+0300]
+TID: [-1234] [] [2025-07-25 10:53:10,720]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} - Permission cache updated for tenant -1234
+TID: [] [] [2025-07-25 10:53:10,722]  INFO {org.wso2.carbon.databridge.core.DataBridge} - user admin connected
+TID: [-1234] [] [2025-07-25 10:53:24,616]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} - Permission cache updated for tenant 1
+TID: [-1234] [] [2025-07-25 11:09:45,951]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} - Permission cache updated for tenant -1234
+TID: [] [] [2025-07-25 11:23:54,977]  INFO {org.wso2.carbon.core.multitenancy.utils.TenantAxisUtils} - Starting to clean tenant : tenant1.com
+TID: [] [] [2025-07-25 11:23:54,983]  INFO {org.wso2.carbon.mediation.initializer.multitenancy.TenantServiceBusInitializer} - Shutting down the persistence manager for the tenant: tenant1.com
+TID: [] [] [2025-07-25 11:23:55,032]  INFO {org.wso2.carbon.core.multitenancy.utils.TenantAxisUtils} - Cleaned up tenant tenant1.com
+TID: [-1234] [] [2025-07-25 12:02:45,582]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} - Permission cache updated for tenant 1
+TID: [] [] [2025-07-25 12:02:45,591]  INFO {org.wso2.carbon.databridge.core.DataBridge} - user admin connected
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,690]  INFO {org.wso2.carbon.identity.tenant.resource.manager.TenantAwareAxis2ConfigurationContextObserver} - Loading configuration context for tenant domain: tenant1.com
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,691]  INFO {org.wso2.carbon.core.multitenancy.TenantAxisConfigurator} - Creating tenant AxisConfiguration for tenant: tenant1.com[1]
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,736]  INFO {org.wso2.carbon.identity.user.store.configuration.deployer.UserStoreConfigurationDeployer} - User Store Configuration Deployer initiated.
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,736]  INFO {org.wso2.carbon.identity.user.store.configuration.deployer.UserStoreConfigurationDeployer} - User Store Configuration Deployer initiated.
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,752]  INFO {org.wso2.carbon.mediation.initializer.multitenancy.TenantServiceBusInitializer} - Initializing the ESB Configuration for the tenant domain : tenant1.com
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,754]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : main was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,754]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : fault was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,756]  INFO {org.apache.synapse.SynapseControllerFactory} - Using Synapse home : /Users/burzumjoy/Downloads/wso2am-4.5.0/repository/tenants/1
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,756]  INFO {org.apache.synapse.SynapseControllerFactory} - Using synapse.xml location : /Users/burzumjoy/Downloads/wso2am-4.5.0/repository/tenants/1/synapse-configs/default
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,756]  INFO {org.apache.synapse.SynapseControllerFactory} - Using server name : synapse.tenant1.com
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,756]  INFO {org.apache.synapse.SynapseControllerFactory} - The timeout handler will run every : 15s
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,757]  INFO {org.apache.synapse.Axis2SynapseController} - Initializing Synapse at : Fri Jul 25 12:02:45 MSK 2025
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,757]  INFO {org.wso2.carbon.mediation.initializer.CarbonSynapseController} - Loading the mediation configuration from the file system
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,757]  INFO {org.apache.synapse.config.xml.MultiXMLConfigurationBuilder} - Building synapse configuration from the synapse artifact repository at : /Users/burzumjoy/Downloads/wso2am-4.5.0/repository/tenants/1/synapse-configs/default
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,757]  INFO {org.apache.synapse.config.xml.XMLConfigurationBuilder} - Generating the Synapse configuration model by parsing the XML configuration
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,759]  INFO {org.wso2.carbon.mediation.ntask.NTaskTaskManager} - Initialized task manager. Tenant [1]
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,759]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : fault was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,759]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : main was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,766]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : main was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,768]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : _cors_request_handler_ was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,772]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : _throttle_out_handler_ was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,773]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : dispatchSeq was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,773]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : outDispatchSeq was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,775]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : _threat_fault_ was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,775]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : _production_key_error_ was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,776]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : _resource_mismatch_handler_ was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,778]  WARN {org.wso2.carbon.apimgt.impl.factory.KeyManagerHolder} - Key Manager Resident Key Manager already initialized in tenant tenant1.com
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,779]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : fault was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,780]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : _opa_policy_failure_handler_ was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,782]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : _backend_failure_handler_ was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,783]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : webhooksFaultSequence was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,784]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : _graphql_failure_handler was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,785]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : _api_blocked_sequence_ was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,786]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : _auth_failure_handler_ was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,786]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : _sandbox_key_error_ was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,787]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Inbound Endpoint : SecureWebhookServer was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,788]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Inbound Endpoint : WebhookServer was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,788]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Inbound Endpoint : SecureWebSocketEP was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,789]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Inbound Endpoint : WebSocketInboundEndpoint was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,789]  INFO {org.apache.synapse.config.SynapseConfigurationBuilder} - Loaded Synapse configuration from the artifact repository at : /Users/burzumjoy/Downloads/wso2am-4.5.0/repository/tenants/1/synapse-configs/default
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,789]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Local entry : SERVER_HOST was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,789]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Local entry : SERVER_IP was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,790]  INFO {org.apache.synapse.Axis2SynapseController} - Loading mediator extensions...
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,790]  INFO {org.apache.synapse.Axis2SynapseController} - Deploying the Synapse service...
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,791]  INFO {org.apache.synapse.Axis2SynapseController} - Deploying Proxy services...
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,791]  INFO {org.apache.synapse.Axis2SynapseController} - Deploying EventSources...
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,791]  INFO {org.apache.synapse.inbound.InboundEndpoint} - Destroying Inbound Endpoint: WebSocketInboundEndpoint
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,791]  INFO {org.apache.synapse.inbound.InboundEndpoint} - Destroying Inbound Endpoint: SecureWebSocketEP
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,791]  INFO {org.apache.synapse.inbound.InboundEndpoint} - Destroying Inbound Endpoint: WebhookServer
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,791]  INFO {org.apache.synapse.inbound.InboundEndpoint} - Destroying Inbound Endpoint: SecureWebhookServer
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,791]  INFO {org.apache.synapse.inbound.InboundEndpoint} - Initializing Inbound Endpoint: WebSocketInboundEndpoint
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,791]  INFO {org.wso2.carbon.inbound.endpoint.protocol.websocket.management.WebsocketEndpointManager} - Netty Listener already started on port 9099
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,792]  INFO {org.apache.synapse.inbound.InboundEndpoint} - Initializing Inbound Endpoint: SecureWebSocketEP
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,792]  INFO {org.wso2.carbon.inbound.endpoint.protocol.websocket.management.WebsocketEndpointManager} - Netty Listener already started on port 8099
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,792]  INFO {org.apache.synapse.inbound.InboundEndpoint} - Initializing Inbound Endpoint: WebhookServer
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,792]  INFO {org.wso2.carbon.inbound.endpoint.protocol.http.management.HTTPEndpointManager} - Listener is already started for port : 9021
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,792]  INFO {org.apache.synapse.inbound.InboundEndpoint} - Initializing Inbound Endpoint: SecureWebhookServer
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,792]  INFO {org.wso2.carbon.inbound.endpoint.protocol.http.management.HTTPEndpointManager} - Listener is already started for port : 8021
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,792]  INFO {org.apache.synapse.ServerManager} - Server ready for processing...
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,800]  INFO {org.wso2.carbon.apimgt.governance.impl.observer.APIMGovernanceConfigDeployer} - Starting to load default rulesets.
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,807]  INFO {org.wso2.carbon.apimgt.governance.impl.util.APIMGovernanceUtil} - Ruleset WSO2 REST API Design Guidelines already exists in organization: tenant1.com; skipping.
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,808]  INFO {org.wso2.carbon.apimgt.governance.impl.util.APIMGovernanceUtil} - Ruleset WSO2 API Management Guidelines already exists in organization: tenant1.com; skipping.
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,809]  INFO {org.wso2.carbon.apimgt.governance.impl.util.APIMGovernanceUtil} - Ruleset OWASP Top 10 already exists in organization: tenant1.com; skipping.
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,809]  INFO {org.wso2.carbon.apimgt.governance.impl.observer.APIMGovernanceConfigDeployer} - Starting to load default policies.
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,809]  INFO {org.wso2.carbon.apimgt.governance.impl.util.APIMGovernanceUtil} - Policy WSO2 API Management Best Practices already exists in organization: tenant1.com; skipping.
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,845]  INFO {org.wso2.carbon.apimgt.gateway.listeners.GatewayStartupListener} - Gateway policy artifacts deployed Successfully in the Gateway
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,853]  INFO {org.wso2.carbon.apimgt.impl.certificatemgt.CertificateManagerImpl} - The Transport Sender will be re-initialized in few minutes.
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,860]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} - Permission cache updated for tenant 1
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,865]  INFO {org.wso2.carbon.apimgt.gateway.internal.TenantServiceCreator} - Initializing APIM TenantServiceCreator for the tenant domain : tenant1.com
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,869]  INFO {org.wso2.carbon.core.multitenancy.utils.TenantAxisUtils} - Loaded tenant tenant1.com in 182 ms
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,870]  INFO {org.wso2.carbon.apimgt.gateway.InMemoryAPIDeployer} - Deploying synapse artifacts of _JwksEndpoint_
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,872]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Local entry : ga-config-key was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,873]  INFO {org.apache.synapse.api.API} - {api:_JwksEndpoint_} Initializing API: _JwksEndpoint_
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,874]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - API : _JwksEndpoint_ was added to the Synapse configuration successfully
+TID: [-1234] [internal/data/v1] [2025-07-25 12:02:45,884]  INFO {org.wso2.carbon.apimgt.impl.importexport.utils.CommonUtil} - Creation of folder is successful. Directory Name : test-1
+TID: [-1234] [internal/data/v1] [2025-07-25 12:02:45,885]  INFO {org.wso2.carbon.apimgt.impl.importexport.utils.CommonUtil} - Creation of folder is successful. Directory Name : Definitions
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,987]  INFO {org.wso2.carbon.apimgt.gateway.InMemoryAPIDeployer} - Deploying synapse artifacts of API ID: 7085e562-9fc5-4b92-a7fd-73c47da26239 and Context: /t/tenant1.com/test/1
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,990]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Local entry : 7085e562-9fc5-4b92-a7fd-73c47da26239 was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,991]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Endpoint : test--v1_APIsandboxEndpoint was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 12:02:45,992]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Endpoint : test--v1_APIproductionEndpoint was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 12:02:46,001]  INFO {org.apache.synapse.api.API} - {api:test:v1} Initializing API: test:v1
+TID: [-1234] [oauth2] [2025-07-25 12:02:46,001]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - API : test:v1 was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 12:02:46,002]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLSender} - PassThroughHttpSender reloading SSL Config..
+TID: [-1234] [oauth2] [2025-07-25 12:02:46,002]  INFO {org.wso2.carbon.apimgt.gateway.listeners.GatewayStartupListener} - Synapse Artifacts deployed Successfully in the Gateway
+TID: [-1234] [oauth2] [2025-07-25 12:02:46,049]  INFO {org.apache.synapse.transport.nhttp.config.ClientConnFactoryBuilder} - customSSLProfiles configuration is loaded from path: /Users/burzumjoy/Downloads/wso2am-4.5.0/repository/resources/security/sslprofiles.xml
+TID: [-1234] [oauth2] [2025-07-25 12:02:46,049]  INFO {org.apache.synapse.transport.nhttp.config.ClientConnFactoryBuilder} - HTTPS Loading custom SSL profiles for the HTTPS sender
+TID: [-1234] [oauth2] [2025-07-25 12:02:46,086]  INFO {org.apache.synapse.transport.nhttp.config.ClientConnFactoryBuilder} - HTTPS Custom SSL profiles initialized for 1 servers
+TID: [-1234] [oauth2] [2025-07-25 12:02:46,087]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLSender} - Pass-through HTTPS Sender updated with Dynamic Configuration Updates ...
+TID: [-1234] [] [2025-07-25 12:02:52,547]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} - Permission cache updated for tenant 1
+TID: [] [] [2025-07-25 12:33:05,971]  INFO {org.wso2.carbon.core.multitenancy.utils.TenantAxisUtils} - Starting to clean tenant : tenant1.com
+TID: [] [] [2025-07-25 12:33:05,979]  INFO {org.wso2.carbon.mediation.initializer.multitenancy.TenantServiceBusInitializer} - Shutting down the persistence manager for the tenant: tenant1.com
+TID: [] [] [2025-07-25 12:33:06,015]  INFO {org.wso2.carbon.core.multitenancy.utils.TenantAxisUtils} - Cleaned up tenant tenant1.com
+TID: [] [] [2025-07-25 15:29:26,781]  INFO {org.wso2.carbon.identity.application.authentication.framework.store.SessionCleanUpService} - Session Data cleanup task is running successfully for removing expired Data
+TID: [-1234] [] [2025-07-25 15:31:41,412]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} - Permission cache updated for tenant -1234
+TID: [] [] [2025-07-25 15:31:41,419]  INFO {org.wso2.carbon.databridge.core.DataBridge} - user admin connected
+TID: [-1234] [publisher] [2025-07-25 15:32:12,224] ERROR {org.apache.jsp.services.refresh.refresh_jsp} - org.wso2.carbon.ui.filters.cache.ContentTypeBasedCachePreventionFilter$1@78f655c1
+TID: [-1234] [api/am/publisher] [2025-07-25 15:32:12,260] ERROR {org.wso2.carbon.apimgt.rest.api.util.impl.OAuthOpaqueAuthenticatorImpl} - Invalid OAuth Token : Invalid Access Token. ACTIVE access token is not found.
+TID: [-1234] [api/am/publisher] [2025-07-25 15:32:12,260] ERROR {org.wso2.carbon.apimgt.rest.api.util.impl.OAuthOpaqueAuthenticatorImpl} - Provided access token is invalid
+TID: [-1234] [publisher] [2025-07-25 15:32:12,265] ERROR {org.apache.jsp.services.refresh.refresh_jsp} - org.wso2.carbon.ui.filters.cache.ContentTypeBasedCachePreventionFilter$1@523150a3
+TID: [-1234] [api/am/publisher] [2025-07-25 15:32:12,271] ERROR {org.wso2.carbon.apimgt.rest.api.util.impl.OAuthOpaqueAuthenticatorImpl} - Provided access token is invalid
+TID: [-1234] [oauth2] [2025-07-25 15:32:12,412] ERROR {org.wso2.carbon.identity.application.authentication.framework.handler.sequence.impl.DefaultStepBasedSequenceHandler} - An External IdP cannot be null for a FederatedApplicationAuthenticator
+TID: [-1234] [oauth2] [2025-07-25 15:32:12,412] ERROR {org.wso2.carbon.identity.application.authentication.framework.handler.request.impl.DefaultRequestCoordinator} - Exception in Authentication Framework org.wso2.carbon.identity.application.authentication.framework.exception.FrameworkException: An External IdP cannot be null for a FederatedApplicationAuthenticator
+	at org.wso2.carbon.identity.application.authentication.framework.handler.sequence.impl.DefaultStepBasedSequenceHandler.handlePostAuthentication(DefaultStepBasedSequenceHandler.java:316)
+	at org.wso2.carbon.identity.application.authentication.framework.handler.sequence.impl.DefaultStepBasedSequenceHandler.handle(DefaultStepBasedSequenceHandler.java:204)
+	at org.wso2.carbon.identity.application.authentication.framework.handler.sequence.impl.GraphBasedSequenceHandler.handle(GraphBasedSequenceHandler.java:118)
+	at org.wso2.carbon.identity.application.authentication.framework.handler.request.impl.DefaultAuthenticationRequestHandler.handle(DefaultAuthenticationRequestHandler.java:191)
+	at org.wso2.carbon.identity.application.authentication.framework.handler.request.impl.DefaultRequestCoordinator.handle(DefaultRequestCoordinator.java:317)
+	at org.wso2.carbon.identity.application.authentication.framework.CommonAuthenticationHandler.doPost(CommonAuthenticationHandler.java:50)
+	at org.wso2.carbon.identity.application.authentication.framework.CommonAuthenticationHandler.doGet(CommonAuthenticationHandler.java:41)
+	at org.wso2.carbon.identity.oauth.endpoint.authz.OAuth2AuthzEndpoint.handleAuthFlowThroughFramework(OAuth2AuthzEndpoint.java:3315)
+	at org.wso2.carbon.identity.oauth.endpoint.authz.OAuth2AuthzEndpoint.handleInitialAuthorizationRequest(OAuth2AuthzEndpoint.java:1080)
+	at org.wso2.carbon.identity.oauth.endpoint.authz.OAuth2AuthzEndpoint.authorize(OAuth2AuthzEndpoint.java:286)
+	at jdk.internal.reflect.GeneratedMethodAccessor609.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:179)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:201)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:104)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:59)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:96)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:307)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:265)
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:234)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:208)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:160)
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:225)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:304)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doGet(AbstractHTTPServlet.java:222)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:279)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.wso2.carbon.webapp.mgt.filter.AuthorizationHeaderFilter.doFilter(AuthorizationHeaderFilter.java:85)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.wso2.carbon.ui.filters.cache.ContentTypeBasedCachePreventionFilter.doFilter(ContentTypeBasedCachePreventionFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:129)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.wso2.carbon.identity.context.rewrite.valve.TenantContextRewriteValve.invoke(TenantContextRewriteValve.java:119)
+	at org.wso2.carbon.identity.context.rewrite.valve.OrganizationContextRewriteValve.invoke(OrganizationContextRewriteValve.java:115)
+	at org.wso2.carbon.tomcat.ext.valves.SameSiteCookieValve.invoke(SameSiteCookieValve.java:38)
+	at org.wso2.carbon.identity.authz.valve.AuthorizationValve.invoke(AuthorizationValve.java:167)
+	at org.wso2.carbon.identity.auth.valve.AuthenticationValve.invoke(AuthenticationValve.java:118)
+	at org.wso2.carbon.tomcat.ext.valves.CompositeValve.continueInvocation(CompositeValve.java:106)
+	at org.wso2.carbon.tomcat.ext.valves.TomcatValveContainer.invokeValves(TomcatValveContainer.java:49)
+	at org.wso2.carbon.tomcat.ext.valves.CompositeValve.invoke(CompositeValve.java:69)
+	at org.wso2.carbon.tomcat.ext.valves.CarbonStuckThreadDetectionValve.invoke(CarbonStuckThreadDetectionValve.java:152)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+	at org.wso2.carbon.tomcat.ext.valves.CarbonContextCreatorValve.invoke(CarbonContextCreatorValve.java:63)
+	at org.wso2.carbon.tomcat.ext.valves.RequestCorrelationIdValve.invoke(RequestCorrelationIdValve.java:137)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:383)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:936)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+TID: [-1234] [] [2025-07-25 15:32:15,152]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} - Permission cache updated for tenant -1234
+TID: [-1234] [oauth2] [2025-07-25 15:32:37,517] ERROR {org.wso2.carbon.identity.application.authentication.framework.handler.sequence.impl.DefaultStepBasedSequenceHandler} - An External IdP cannot be null for a FederatedApplicationAuthenticator
+TID: [-1234] [oauth2] [2025-07-25 15:32:37,517] ERROR {org.wso2.carbon.identity.application.authentication.framework.handler.request.impl.DefaultRequestCoordinator} - Exception in Authentication Framework org.wso2.carbon.identity.application.authentication.framework.exception.FrameworkException: An External IdP cannot be null for a FederatedApplicationAuthenticator
+	at org.wso2.carbon.identity.application.authentication.framework.handler.sequence.impl.DefaultStepBasedSequenceHandler.handlePostAuthentication(DefaultStepBasedSequenceHandler.java:316)
+	at org.wso2.carbon.identity.application.authentication.framework.handler.sequence.impl.DefaultStepBasedSequenceHandler.handle(DefaultStepBasedSequenceHandler.java:204)
+	at org.wso2.carbon.identity.application.authentication.framework.handler.sequence.impl.GraphBasedSequenceHandler.handle(GraphBasedSequenceHandler.java:118)
+	at org.wso2.carbon.identity.application.authentication.framework.handler.request.impl.DefaultAuthenticationRequestHandler.handle(DefaultAuthenticationRequestHandler.java:191)
+	at org.wso2.carbon.identity.application.authentication.framework.handler.request.impl.DefaultRequestCoordinator.handle(DefaultRequestCoordinator.java:317)
+	at org.wso2.carbon.identity.application.authentication.framework.CommonAuthenticationHandler.doPost(CommonAuthenticationHandler.java:50)
+	at org.wso2.carbon.identity.application.authentication.framework.CommonAuthenticationHandler.doGet(CommonAuthenticationHandler.java:41)
+	at org.wso2.carbon.identity.oauth.endpoint.authz.OAuth2AuthzEndpoint.handleAuthFlowThroughFramework(OAuth2AuthzEndpoint.java:3315)
+	at org.wso2.carbon.identity.oauth.endpoint.authz.OAuth2AuthzEndpoint.handleInitialAuthorizationRequest(OAuth2AuthzEndpoint.java:1080)
+	at org.wso2.carbon.identity.oauth.endpoint.authz.OAuth2AuthzEndpoint.authorize(OAuth2AuthzEndpoint.java:286)
+	at jdk.internal.reflect.GeneratedMethodAccessor609.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:179)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:201)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:104)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:59)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:96)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:307)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:265)
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:234)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:208)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:160)
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:225)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:304)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doGet(AbstractHTTPServlet.java:222)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:279)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.wso2.carbon.webapp.mgt.filter.AuthorizationHeaderFilter.doFilter(AuthorizationHeaderFilter.java:85)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.wso2.carbon.ui.filters.cache.ContentTypeBasedCachePreventionFilter.doFilter(ContentTypeBasedCachePreventionFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:129)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.wso2.carbon.identity.context.rewrite.valve.TenantContextRewriteValve.invoke(TenantContextRewriteValve.java:119)
+	at org.wso2.carbon.identity.context.rewrite.valve.OrganizationContextRewriteValve.invoke(OrganizationContextRewriteValve.java:115)
+	at org.wso2.carbon.tomcat.ext.valves.SameSiteCookieValve.invoke(SameSiteCookieValve.java:38)
+	at org.wso2.carbon.identity.authz.valve.AuthorizationValve.invoke(AuthorizationValve.java:167)
+	at org.wso2.carbon.identity.auth.valve.AuthenticationValve.invoke(AuthenticationValve.java:118)
+	at org.wso2.carbon.tomcat.ext.valves.CompositeValve.continueInvocation(CompositeValve.java:106)
+	at org.wso2.carbon.tomcat.ext.valves.TomcatValveContainer.invokeValves(TomcatValveContainer.java:49)
+	at org.wso2.carbon.tomcat.ext.valves.CompositeValve.invoke(CompositeValve.java:69)
+	at org.wso2.carbon.tomcat.ext.valves.CarbonStuckThreadDetectionValve.invoke(CarbonStuckThreadDetectionValve.java:152)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+	at org.wso2.carbon.tomcat.ext.valves.CarbonContextCreatorValve.invoke(CarbonContextCreatorValve.java:63)
+	at org.wso2.carbon.tomcat.ext.valves.RequestCorrelationIdValve.invoke(RequestCorrelationIdValve.java:137)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:383)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:936)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+TID: [-1234] [] [2025-07-25 15:32:40,008]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} - Permission cache updated for tenant -1234
+TID: [-1234] [] [2025-07-25 15:33:07,039]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} - Permission cache updated for tenant 1
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,089]  INFO {org.wso2.carbon.identity.tenant.resource.manager.TenantAwareAxis2ConfigurationContextObserver} - Loading configuration context for tenant domain: tenant1.com
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,092]  INFO {org.wso2.carbon.core.multitenancy.TenantAxisConfigurator} - Creating tenant AxisConfiguration for tenant: tenant1.com[1]
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,143]  INFO {org.wso2.carbon.identity.user.store.configuration.deployer.UserStoreConfigurationDeployer} - User Store Configuration Deployer initiated.
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,143]  INFO {org.wso2.carbon.identity.user.store.configuration.deployer.UserStoreConfigurationDeployer} - User Store Configuration Deployer initiated.
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,155]  INFO {org.wso2.carbon.mediation.initializer.multitenancy.TenantServiceBusInitializer} - Initializing the ESB Configuration for the tenant domain : tenant1.com
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,160]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : main was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,161]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : fault was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,178]  WARN {org.wso2.carbon.apimgt.impl.factory.KeyManagerHolder} - Key Manager Resident Key Manager already initialized in tenant tenant1.com
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,397]  INFO {org.apache.synapse.SynapseControllerFactory} - Using Synapse home : /Users/burzumjoy/Downloads/wso2am-4.5.0/repository/tenants/1
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,397]  INFO {org.apache.synapse.SynapseControllerFactory} - Using synapse.xml location : /Users/burzumjoy/Downloads/wso2am-4.5.0/repository/tenants/1/synapse-configs/default
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,397]  INFO {org.apache.synapse.SynapseControllerFactory} - Using server name : synapse.tenant1.com
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,397]  INFO {org.apache.synapse.SynapseControllerFactory} - The timeout handler will run every : 15s
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,398]  INFO {org.apache.synapse.Axis2SynapseController} - Initializing Synapse at : Fri Jul 25 15:33:07 MSK 2025
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,399]  INFO {org.wso2.carbon.mediation.initializer.CarbonSynapseController} - Loading the mediation configuration from the file system
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,399]  INFO {org.apache.synapse.config.xml.MultiXMLConfigurationBuilder} - Building synapse configuration from the synapse artifact repository at : /Users/burzumjoy/Downloads/wso2am-4.5.0/repository/tenants/1/synapse-configs/default
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,399]  INFO {org.apache.synapse.config.xml.XMLConfigurationBuilder} - Generating the Synapse configuration model by parsing the XML configuration
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,400]  INFO {org.wso2.carbon.mediation.ntask.NTaskTaskManager} - Initialized task manager. Tenant [1]
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,400]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : fault was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,400]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : main was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,406]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : main was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,407]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : _cors_request_handler_ was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,409]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : _throttle_out_handler_ was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,409]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : dispatchSeq was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,409]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : outDispatchSeq was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,410]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : _threat_fault_ was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,410]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : _production_key_error_ was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,411]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : _resource_mismatch_handler_ was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,412]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : fault was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,413]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : _opa_policy_failure_handler_ was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,414]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : _backend_failure_handler_ was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,415]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : webhooksFaultSequence was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,415]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : _graphql_failure_handler was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,416]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : _api_blocked_sequence_ was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,417]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : _auth_failure_handler_ was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,417]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : _sandbox_key_error_ was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,418]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Inbound Endpoint : SecureWebhookServer was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,418]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Inbound Endpoint : WebhookServer was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,419]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Inbound Endpoint : SecureWebSocketEP was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,419]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Inbound Endpoint : WebSocketInboundEndpoint was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,419]  INFO {org.apache.synapse.config.SynapseConfigurationBuilder} - Loaded Synapse configuration from the artifact repository at : /Users/burzumjoy/Downloads/wso2am-4.5.0/repository/tenants/1/synapse-configs/default
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,419]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Local entry : SERVER_HOST was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,419]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Local entry : SERVER_IP was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,421]  INFO {org.apache.synapse.Axis2SynapseController} - Loading mediator extensions...
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,421]  INFO {org.apache.synapse.Axis2SynapseController} - Deploying the Synapse service...
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,421]  INFO {org.apache.synapse.Axis2SynapseController} - Deploying Proxy services...
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,421]  INFO {org.apache.synapse.Axis2SynapseController} - Deploying EventSources...
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,421]  INFO {org.apache.synapse.inbound.InboundEndpoint} - Destroying Inbound Endpoint: WebSocketInboundEndpoint
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,421]  INFO {org.apache.synapse.inbound.InboundEndpoint} - Destroying Inbound Endpoint: SecureWebSocketEP
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,421]  INFO {org.apache.synapse.inbound.InboundEndpoint} - Destroying Inbound Endpoint: WebhookServer
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,421]  INFO {org.apache.synapse.inbound.InboundEndpoint} - Destroying Inbound Endpoint: SecureWebhookServer
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,421]  INFO {org.apache.synapse.inbound.InboundEndpoint} - Initializing Inbound Endpoint: WebSocketInboundEndpoint
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,421]  INFO {org.wso2.carbon.inbound.endpoint.protocol.websocket.management.WebsocketEndpointManager} - Netty Listener already started on port 9099
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,421]  INFO {org.apache.synapse.inbound.InboundEndpoint} - Initializing Inbound Endpoint: SecureWebSocketEP
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,422]  INFO {org.wso2.carbon.inbound.endpoint.protocol.websocket.management.WebsocketEndpointManager} - Netty Listener already started on port 8099
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,422]  INFO {org.apache.synapse.inbound.InboundEndpoint} - Initializing Inbound Endpoint: WebhookServer
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,422]  INFO {org.wso2.carbon.inbound.endpoint.protocol.http.management.HTTPEndpointManager} - Listener is already started for port : 9021
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,422]  INFO {org.apache.synapse.inbound.InboundEndpoint} - Initializing Inbound Endpoint: SecureWebhookServer
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,422]  INFO {org.wso2.carbon.inbound.endpoint.protocol.http.management.HTTPEndpointManager} - Listener is already started for port : 8021
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,422]  INFO {org.apache.synapse.ServerManager} - Server ready for processing...
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,427]  INFO {org.wso2.carbon.apimgt.governance.impl.observer.APIMGovernanceConfigDeployer} - Starting to load default rulesets.
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,429]  INFO {org.wso2.carbon.apimgt.governance.impl.util.APIMGovernanceUtil} - Ruleset WSO2 REST API Design Guidelines already exists in organization: tenant1.com; skipping.
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,430]  INFO {org.wso2.carbon.apimgt.governance.impl.util.APIMGovernanceUtil} - Ruleset WSO2 API Management Guidelines already exists in organization: tenant1.com; skipping.
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,431]  INFO {org.wso2.carbon.apimgt.governance.impl.util.APIMGovernanceUtil} - Ruleset OWASP Top 10 already exists in organization: tenant1.com; skipping.
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,431]  INFO {org.wso2.carbon.apimgt.governance.impl.observer.APIMGovernanceConfigDeployer} - Starting to load default policies.
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,431]  INFO {org.wso2.carbon.apimgt.governance.impl.util.APIMGovernanceUtil} - Policy WSO2 API Management Best Practices already exists in organization: tenant1.com; skipping.
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,439]  INFO {org.wso2.carbon.apimgt.gateway.listeners.GatewayStartupListener} - Gateway policy artifacts deployed Successfully in the Gateway
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,452]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} - Permission cache updated for tenant 1
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,452]  INFO {org.wso2.carbon.apimgt.impl.certificatemgt.CertificateManagerImpl} - The Transport Sender will be re-initialized in few minutes.
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,453]  INFO {org.wso2.carbon.apimgt.gateway.internal.TenantServiceCreator} - Initializing APIM TenantServiceCreator for the tenant domain : tenant1.com
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,456]  INFO {org.wso2.carbon.core.multitenancy.utils.TenantAxisUtils} - Loaded tenant tenant1.com in 374 ms
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,457]  INFO {org.wso2.carbon.apimgt.gateway.InMemoryAPIDeployer} - Deploying synapse artifacts of _JwksEndpoint_
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,459]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Local entry : ga-config-key was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,459]  INFO {org.apache.synapse.api.API} - {api:_JwksEndpoint_} Initializing API: _JwksEndpoint_
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,460]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - API : _JwksEndpoint_ was added to the Synapse configuration successfully
+TID: [-1234] [internal/data/v1] [2025-07-25 15:33:07,463]  INFO {org.wso2.carbon.apimgt.impl.importexport.utils.CommonUtil} - Creation of folder is successful. Directory Name : test-1
+TID: [-1234] [internal/data/v1] [2025-07-25 15:33:07,464]  INFO {org.wso2.carbon.apimgt.impl.importexport.utils.CommonUtil} - Creation of folder is successful. Directory Name : Definitions
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,588]  INFO {org.wso2.carbon.apimgt.gateway.InMemoryAPIDeployer} - Deploying synapse artifacts of API ID: 7085e562-9fc5-4b92-a7fd-73c47da26239 and Context: /t/tenant1.com/test/1
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,589]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Local entry : 7085e562-9fc5-4b92-a7fd-73c47da26239 was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,590]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Endpoint : test--v1_APIsandboxEndpoint was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,590]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Endpoint : test--v1_APIproductionEndpoint was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,592]  INFO {org.apache.synapse.api.API} - {api:test:v1} Initializing API: test:v1
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,592]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - API : test:v1 was added to the Synapse configuration successfully
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,593]  INFO {org.wso2.carbon.apimgt.gateway.listeners.GatewayStartupListener} - Synapse Artifacts deployed Successfully in the Gateway
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,593]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLSender} - PassThroughHttpSender reloading SSL Config..
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,614]  INFO {org.apache.synapse.transport.nhttp.config.ClientConnFactoryBuilder} - customSSLProfiles configuration is loaded from path: /Users/burzumjoy/Downloads/wso2am-4.5.0/repository/resources/security/sslprofiles.xml
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,614]  INFO {org.apache.synapse.transport.nhttp.config.ClientConnFactoryBuilder} - HTTPS Loading custom SSL profiles for the HTTPS sender
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,657]  INFO {org.apache.synapse.transport.nhttp.config.ClientConnFactoryBuilder} - HTTPS Custom SSL profiles initialized for 1 servers
+TID: [-1234] [oauth2] [2025-07-25 15:33:07,658]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLSender} - Pass-through HTTPS Sender updated with Dynamic Configuration Updates ...
+TID: [-1234] [] [2025-07-25 15:33:14,268]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} - Permission cache updated for tenant 1
+TID: [-1234] [publisher] [2025-07-25 15:33:32,042] ERROR {org.apache.jsp.services.refresh.refresh_jsp} - org.wso2.carbon.ui.filters.cache.ContentTypeBasedCachePreventionFilter$1@420db956
+TID: [-1234] [api/am/publisher] [2025-07-25 15:33:32,087] ERROR {org.wso2.carbon.apimgt.rest.api.util.impl.OAuthOpaqueAuthenticatorImpl} - Provided access token is invalid
+TID: [-1234] [publisher] [2025-07-25 15:33:32,093] ERROR {org.apache.jsp.services.refresh.refresh_jsp} - org.wso2.carbon.ui.filters.cache.ContentTypeBasedCachePreventionFilter$1@3d54cc18
+TID: [-1234] [api/am/publisher] [2025-07-25 15:33:32,103] ERROR {org.wso2.carbon.apimgt.rest.api.util.impl.OAuthOpaqueAuthenticatorImpl} - Provided access token is invalid
+TID: [-1234] [oauth2] [2025-07-25 15:33:32,335] ERROR {org.wso2.carbon.identity.application.authentication.framework.handler.sequence.impl.DefaultStepBasedSequenceHandler} - An External IdP cannot be null for a FederatedApplicationAuthenticator
+TID: [-1234] [oauth2] [2025-07-25 15:33:32,335] ERROR {org.wso2.carbon.identity.application.authentication.framework.handler.request.impl.DefaultRequestCoordinator} - Exception in Authentication Framework org.wso2.carbon.identity.application.authentication.framework.exception.FrameworkException: An External IdP cannot be null for a FederatedApplicationAuthenticator
+	at org.wso2.carbon.identity.application.authentication.framework.handler.sequence.impl.DefaultStepBasedSequenceHandler.handlePostAuthentication(DefaultStepBasedSequenceHandler.java:316)
+	at org.wso2.carbon.identity.application.authentication.framework.handler.sequence.impl.DefaultStepBasedSequenceHandler.handle(DefaultStepBasedSequenceHandler.java:204)
+	at org.wso2.carbon.identity.application.authentication.framework.handler.sequence.impl.GraphBasedSequenceHandler.handle(GraphBasedSequenceHandler.java:118)
+	at org.wso2.carbon.identity.application.authentication.framework.handler.request.impl.DefaultAuthenticationRequestHandler.handle(DefaultAuthenticationRequestHandler.java:191)
+	at org.wso2.carbon.identity.application.authentication.framework.handler.request.impl.DefaultRequestCoordinator.handle(DefaultRequestCoordinator.java:317)
+	at org.wso2.carbon.identity.application.authentication.framework.CommonAuthenticationHandler.doPost(CommonAuthenticationHandler.java:50)
+	at org.wso2.carbon.identity.application.authentication.framework.CommonAuthenticationHandler.doGet(CommonAuthenticationHandler.java:41)
+	at org.wso2.carbon.identity.oauth.endpoint.authz.OAuth2AuthzEndpoint.handleAuthFlowThroughFramework(OAuth2AuthzEndpoint.java:3315)
+	at org.wso2.carbon.identity.oauth.endpoint.authz.OAuth2AuthzEndpoint.handleInitialAuthorizationRequest(OAuth2AuthzEndpoint.java:1080)
+	at org.wso2.carbon.identity.oauth.endpoint.authz.OAuth2AuthzEndpoint.authorize(OAuth2AuthzEndpoint.java:286)
+	at jdk.internal.reflect.GeneratedMethodAccessor609.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:179)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:201)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:104)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:59)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:96)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:307)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:265)
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:234)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:208)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:160)
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:225)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:304)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doGet(AbstractHTTPServlet.java:222)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:279)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.wso2.carbon.webapp.mgt.filter.AuthorizationHeaderFilter.doFilter(AuthorizationHeaderFilter.java:85)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.wso2.carbon.ui.filters.cache.ContentTypeBasedCachePreventionFilter.doFilter(ContentTypeBasedCachePreventionFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:129)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.wso2.carbon.identity.context.rewrite.valve.TenantContextRewriteValve.invoke(TenantContextRewriteValve.java:119)
+	at org.wso2.carbon.identity.context.rewrite.valve.OrganizationContextRewriteValve.invoke(OrganizationContextRewriteValve.java:115)
+	at org.wso2.carbon.tomcat.ext.valves.SameSiteCookieValve.invoke(SameSiteCookieValve.java:38)
+	at org.wso2.carbon.identity.authz.valve.AuthorizationValve.invoke(AuthorizationValve.java:167)
+	at org.wso2.carbon.identity.auth.valve.AuthenticationValve.invoke(AuthenticationValve.java:118)
+	at org.wso2.carbon.tomcat.ext.valves.CompositeValve.continueInvocation(CompositeValve.java:106)
+	at org.wso2.carbon.tomcat.ext.valves.TomcatValveContainer.invokeValves(TomcatValveContainer.java:49)
+	at org.wso2.carbon.tomcat.ext.valves.CompositeValve.invoke(CompositeValve.java:69)
+	at org.wso2.carbon.tomcat.ext.valves.CarbonStuckThreadDetectionValve.invoke(CarbonStuckThreadDetectionValve.java:152)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+	at org.wso2.carbon.tomcat.ext.valves.CarbonContextCreatorValve.invoke(CarbonContextCreatorValve.java:63)
+	at org.wso2.carbon.tomcat.ext.valves.RequestCorrelationIdValve.invoke(RequestCorrelationIdValve.java:137)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:383)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:936)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+TID: [-1234] [api/am/publisher] [2025-07-25 15:34:16,411] ERROR {org.wso2.carbon.apimgt.rest.api.util.impl.OAuthOpaqueAuthenticatorImpl} - You cannot access API as scope validation failed
+TID: [-1234] [] [2025-07-25 15:38:13,339]  INFO {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} - 'admin@carbon.super [-1234]' logged in at [2025-07-25 15:38:13,339+0300]
+TID: [-1234] [] [2025-07-25 15:38:15,449]  INFO {org.wso2.carbon.core.services.authentication.AuthenticationAdmin} - 'admin@carbon.super [-1234]' logged out at [2025-07-25 15:38:15,0449]
+TID: [-1234] [] [2025-07-25 15:38:22,586]  INFO {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} - 'admin@tenant1.com [1]' logged in at [2025-07-25 15:38:22,586+0300]
+TID: [-1234] [authenticationendpoint] [2025-07-25 15:39:40,109] ERROR {org.apache.catalina.core.ContainerBase.[Catalina].[localhost].[/authenticationendpoint].[retry.do]} - Servlet.service() for servlet [retry.do] in context with path [/authenticationendpoint] threw exception [An exception occurred processing [/retry.jsp] at line [53]
+
+50:     String statusMsgAuthParam = null;
+51: 
+52:     if (StringUtils.isNotEmpty(errorKey)) {
+53:         AuthenticationRequestWrapper authRequest = (AuthenticationRequestWrapper) request;
+54:         statAuthParam = authRequest.getAuthParameter(Constants.STATUS);
+55:         statusMsgAuthParam = authRequest.getAuthParameter(Constants.STATUS_MSG);
+56:     }
+
+
+Stacktrace:] with root cause java.lang.ClassCastException: class org.apache.catalina.connector.RequestFacade cannot be cast to class org.wso2.carbon.identity.application.authentication.endpoint.util.client.model.AuthenticationRequestWrapper (org.apache.catalina.connector.RequestFacade is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @3297df2c; org.wso2.carbon.identity.application.authentication.endpoint.util.client.model.AuthenticationRequestWrapper is in unnamed module of loader org.wso2.carbon.webapp.mgt.loader.CarbonWebappClassLoader @5a048532)
+	at org.apache.jsp.retry_jsp._jspService(retry_jsp.java:301)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:67)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:376)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:324)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.wso2.carbon.ui.filters.cache.ContentTypeBasedCachePreventionFilter.doFilter(ContentTypeBasedCachePreventionFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.wso2.carbon.identity.application.authentication.endpoint.util.filter.AuthenticationEndpointFilter.doFilter(AuthenticationEndpointFilter.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:129)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.wso2.carbon.identity.context.rewrite.valve.TenantContextRewriteValve.invoke(TenantContextRewriteValve.java:119)
+	at org.wso2.carbon.identity.context.rewrite.valve.OrganizationContextRewriteValve.invoke(OrganizationContextRewriteValve.java:115)
+	at org.wso2.carbon.tomcat.ext.valves.SameSiteCookieValve.invoke(SameSiteCookieValve.java:38)
+	at org.wso2.carbon.identity.authz.valve.AuthorizationValve.invoke(AuthorizationValve.java:167)
+	at org.wso2.carbon.identity.auth.valve.AuthenticationValve.invoke(AuthenticationValve.java:118)
+	at org.wso2.carbon.tomcat.ext.valves.CompositeValve.continueInvocation(CompositeValve.java:106)
+	at org.wso2.carbon.tomcat.ext.valves.TomcatValveContainer.invokeValves(TomcatValveContainer.java:49)
+	at org.wso2.carbon.tomcat.ext.valves.CompositeValve.invoke(CompositeValve.java:69)
+	at org.wso2.carbon.tomcat.ext.valves.CarbonStuckThreadDetectionValve.invoke(CarbonStuckThreadDetectionValve.java:152)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+	at org.wso2.carbon.tomcat.ext.valves.CarbonContextCreatorValve.invoke(CarbonContextCreatorValve.java:63)
+	at org.wso2.carbon.tomcat.ext.valves.RequestCorrelationIdValve.invoke(RequestCorrelationIdValve.java:137)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:383)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:936)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+TID: [-1234] [authenticationendpoint] [2025-07-25 15:39:44,551] ERROR {org.apache.catalina.core.ContainerBase.[Catalina].[localhost].[/authenticationendpoint].[retry.do]} - Servlet.service() for servlet [retry.do] in context with path [/authenticationendpoint] threw exception [An exception occurred processing [/retry.jsp] at line [53]
+
+50:     String statusMsgAuthParam = null;
+51: 
+52:     if (StringUtils.isNotEmpty(errorKey)) {
+53:         AuthenticationRequestWrapper authRequest = (AuthenticationRequestWrapper) request;
+54:         statAuthParam = authRequest.getAuthParameter(Constants.STATUS);
+55:         statusMsgAuthParam = authRequest.getAuthParameter(Constants.STATUS_MSG);
+56:     }
+
+
+Stacktrace:] with root cause java.lang.ClassCastException: class org.apache.catalina.connector.RequestFacade cannot be cast to class org.wso2.carbon.identity.application.authentication.endpoint.util.client.model.AuthenticationRequestWrapper (org.apache.catalina.connector.RequestFacade is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @3297df2c; org.wso2.carbon.identity.application.authentication.endpoint.util.client.model.AuthenticationRequestWrapper is in unnamed module of loader org.wso2.carbon.webapp.mgt.loader.CarbonWebappClassLoader @5a048532)
+	at org.apache.jsp.retry_jsp._jspService(retry_jsp.java:301)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:67)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:376)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:324)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.wso2.carbon.ui.filters.cache.ContentTypeBasedCachePreventionFilter.doFilter(ContentTypeBasedCachePreventionFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.wso2.carbon.identity.application.authentication.endpoint.util.filter.AuthenticationEndpointFilter.doFilter(AuthenticationEndpointFilter.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:129)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.wso2.carbon.identity.context.rewrite.valve.TenantContextRewriteValve.invoke(TenantContextRewriteValve.java:119)
+	at org.wso2.carbon.identity.context.rewrite.valve.OrganizationContextRewriteValve.invoke(OrganizationContextRewriteValve.java:115)
+	at org.wso2.carbon.tomcat.ext.valves.SameSiteCookieValve.invoke(SameSiteCookieValve.java:38)
+	at org.wso2.carbon.identity.authz.valve.AuthorizationValve.invoke(AuthorizationValve.java:167)
+	at org.wso2.carbon.identity.auth.valve.AuthenticationValve.invoke(AuthenticationValve.java:118)
+	at org.wso2.carbon.tomcat.ext.valves.CompositeValve.continueInvocation(CompositeValve.java:106)
+	at org.wso2.carbon.tomcat.ext.valves.TomcatValveContainer.invokeValves(TomcatValveContainer.java:49)
+	at org.wso2.carbon.tomcat.ext.valves.CompositeValve.invoke(CompositeValve.java:69)
+	at org.wso2.carbon.tomcat.ext.valves.CarbonStuckThreadDetectionValve.invoke(CarbonStuckThreadDetectionValve.java:152)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+	at org.wso2.carbon.tomcat.ext.valves.CarbonContextCreatorValve.invoke(CarbonContextCreatorValve.java:63)
+	at org.wso2.carbon.tomcat.ext.valves.RequestCorrelationIdValve.invoke(RequestCorrelationIdValve.java:137)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:383)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:936)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+TID: [-1234] [authenticationendpoint] [2025-07-25 15:40:29,236] ERROR {org.apache.catalina.core.ContainerBase.[Catalina].[localhost].[/authenticationendpoint].[retry.do]} - Servlet.service() for servlet [retry.do] in context with path [/authenticationendpoint] threw exception [An exception occurred processing [/retry.jsp] at line [53]
+
+50:     String statusMsgAuthParam = null;
+51: 
+52:     if (StringUtils.isNotEmpty(errorKey)) {
+53:         AuthenticationRequestWrapper authRequest = (AuthenticationRequestWrapper) request;
+54:         statAuthParam = authRequest.getAuthParameter(Constants.STATUS);
+55:         statusMsgAuthParam = authRequest.getAuthParameter(Constants.STATUS_MSG);
+56:     }
+
+
+Stacktrace:] with root cause java.lang.ClassCastException: class org.apache.catalina.connector.RequestFacade cannot be cast to class org.wso2.carbon.identity.application.authentication.endpoint.util.client.model.AuthenticationRequestWrapper (org.apache.catalina.connector.RequestFacade is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @3297df2c; org.wso2.carbon.identity.application.authentication.endpoint.util.client.model.AuthenticationRequestWrapper is in unnamed module of loader org.wso2.carbon.webapp.mgt.loader.CarbonWebappClassLoader @5a048532)
+	at org.apache.jsp.retry_jsp._jspService(retry_jsp.java:301)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:67)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:376)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:324)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.wso2.carbon.ui.filters.cache.ContentTypeBasedCachePreventionFilter.doFilter(ContentTypeBasedCachePreventionFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.wso2.carbon.identity.application.authentication.endpoint.util.filter.AuthenticationEndpointFilter.doFilter(AuthenticationEndpointFilter.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:129)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.wso2.carbon.identity.context.rewrite.valve.TenantContextRewriteValve.invoke(TenantContextRewriteValve.java:119)
+	at org.wso2.carbon.identity.context.rewrite.valve.OrganizationContextRewriteValve.invoke(OrganizationContextRewriteValve.java:115)
+	at org.wso2.carbon.tomcat.ext.valves.SameSiteCookieValve.invoke(SameSiteCookieValve.java:38)
+	at org.wso2.carbon.identity.authz.valve.AuthorizationValve.invoke(AuthorizationValve.java:167)
+	at org.wso2.carbon.identity.auth.valve.AuthenticationValve.invoke(AuthenticationValve.java:118)
+	at org.wso2.carbon.tomcat.ext.valves.CompositeValve.continueInvocation(CompositeValve.java:106)
+	at org.wso2.carbon.tomcat.ext.valves.TomcatValveContainer.invokeValves(TomcatValveContainer.java:49)
+	at org.wso2.carbon.tomcat.ext.valves.CompositeValve.invoke(CompositeValve.java:69)
+	at org.wso2.carbon.tomcat.ext.valves.CarbonStuckThreadDetectionValve.invoke(CarbonStuckThreadDetectionValve.java:152)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+	at org.wso2.carbon.tomcat.ext.valves.CarbonContextCreatorValve.invoke(CarbonContextCreatorValve.java:63)
+	at org.wso2.carbon.tomcat.ext.valves.RequestCorrelationIdValve.invoke(RequestCorrelationIdValve.java:137)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:383)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:936)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+TID: [-1234] [] [2025-07-25 15:41:37,631]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} - Permission cache updated for tenant 1
+TID: [-1234] [] [2025-07-25 15:41:41,496]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} - Permission cache updated for tenant 1
+TID: [-1234] [] [2025-07-25 15:41:44,808]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} - Permission cache updated for tenant 1
+TID: [-1234] [] [2025-07-25 15:42:59,919]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} - Permission cache updated for tenant 1
+TID: [-1234] [] [2025-07-25 15:43:07,855]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} - Permission cache updated for tenant 1
+TID: [-1234] [] [2025-07-25 15:43:11,808]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} - Permission cache updated for tenant 1
+TID: [-1234] [] [2025-07-25 15:43:33,832]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} - Permission cache updated for tenant -1234
+TID: [-1234] [] [2025-07-25 15:43:39,006]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} - Permission cache updated for tenant -1234
+TID: [-1234] [] [2025-07-25 15:49:26,002]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} - Permission cache updated for tenant 1
+TID: [-1234] [] [2025-07-25 15:49:28,466]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} - Permission cache updated for tenant 1
+TID: [-1234] [] [2025-07-25 15:49:47,605]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} - Permission cache updated for tenant 1
+TID: [-1234] [] [2025-07-25 15:49:51,681]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} - Permission cache updated for tenant 1
+TID: [1] [] [2025-07-25 15:58:00,929]  INFO {org.wso2.carbon.core.services.authentication.AuthenticationAdmin} - 'admin@tenant1.com [1]' logged out at [2025-07-25 15:58:00,0928]
+TID: [-1234] [] [2025-07-25 15:58:09,178]  INFO {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} - 'admin@carbon.super [-1234]' logged in at [2025-07-25 15:58:09,178+0300]
+TID: [] [] [2025-07-25 16:27:53,622]  INFO {org.wso2.carbon.core.multitenancy.utils.TenantAxisUtils} - Starting to clean tenant : tenant1.com
+TID: [] [] [2025-07-25 16:27:53,626]  INFO {org.wso2.carbon.mediation.initializer.multitenancy.TenantServiceBusInitializer} - Shutting down the persistence manager for the tenant: tenant1.com
+TID: [] [] [2025-07-25 16:27:53,649]  INFO {org.wso2.carbon.core.multitenancy.utils.TenantAxisUtils} - Cleaned up tenant tenant1.com

@@ -1,0 +1,153 @@
+2025-07-25 08:30:23 JMXDataRetriever [ERROR] Error while getting JMX data
+java.rmi.ConnectIOException: Exception creating connection to: 192.168.31.65; nested exception is: 
+	java.net.SocketException: Network is unreachable (connect failed)
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:635) ~[?:?]
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:209) ~[?:?]
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:196) ~[?:?]
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:132) ~[?:?]
+	at javax.management.remote.rmi.RMIConnectionImpl_Stub.getAttribute(Unknown Source) ~[?:?]
+	at javax.management.remote.rmi.RMIConnector$RemoteMBeanServerConnection.getAttribute(RMIConnector.java:904) ~[?:?]
+	at org.wso2.diagnostics.utils.JMXDataRetriever.getJmxData(JMXDataRetriever.java:95) [runtime-diagnostics-tool-1.0.17.jar:1.0.17]
+	at org.wso2.diagnostics.utils.JMXDataRetriever.getIntAttributeValue(JMXDataRetriever.java:47) [runtime-diagnostics-tool-1.0.17.jar:1.0.17]
+	at org.wso2.diagnostics.watchers.trafficanalyzer.TrafficAnalyzer.run(TrafficAnalyzer.java:58) [runtime-diagnostics-tool-1.0.17.jar:1.0.17]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: java.net.SocketException: Network is unreachable (connect failed)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[?:?]
+	at java.net.Socket.connect(Socket.java:609) ~[?:?]
+	at java.net.Socket.connect(Socket.java:558) ~[?:?]
+	at java.net.Socket.<init>(Socket.java:454) ~[?:?]
+	at java.net.Socket.<init>(Socket.java:231) ~[?:?]
+	at sun.rmi.transport.tcp.TCPDirectSocketFactory.createSocket(TCPDirectSocketFactory.java:40) ~[?:?]
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:617) ~[?:?]
+	... 14 more
+2025-07-25 08:30:23 JMXDataRetriever [ERROR] Error while getting JMX data
+java.rmi.ConnectIOException: Exception creating connection to: 192.168.31.65; nested exception is: 
+	java.net.SocketException: Network is unreachable (connect failed)
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:635) ~[?:?]
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:209) ~[?:?]
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:196) ~[?:?]
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:132) ~[?:?]
+	at javax.management.remote.rmi.RMIServerImpl_Stub.newClient(Unknown Source) ~[?:?]
+	at javax.management.remote.rmi.RMIConnector.getConnection(RMIConnector.java:2105) ~[?:?]
+	at javax.management.remote.rmi.RMIConnector.connect(RMIConnector.java:321) ~[?:?]
+	at javax.management.remote.JMXConnectorFactory.connect(JMXConnectorFactory.java:270) ~[?:?]
+	at javax.management.remote.JMXConnectorFactory.connect(JMXConnectorFactory.java:229) ~[?:?]
+	at org.wso2.diagnostics.utils.JMXDataRetriever.getConnection(JMXDataRetriever.java:125) [runtime-diagnostics-tool-1.0.17.jar:1.0.17]
+	at org.wso2.diagnostics.utils.JMXDataRetriever.getJmxData(JMXDataRetriever.java:92) [runtime-diagnostics-tool-1.0.17.jar:1.0.17]
+	at org.wso2.diagnostics.utils.JMXDataRetriever.getIntAttributeValue(JMXDataRetriever.java:47) [runtime-diagnostics-tool-1.0.17.jar:1.0.17]
+	at org.wso2.diagnostics.watchers.trafficanalyzer.TrafficAnalyzer.run(TrafficAnalyzer.java:62) [runtime-diagnostics-tool-1.0.17.jar:1.0.17]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: java.net.SocketException: Network is unreachable (connect failed)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[?:?]
+	at java.net.Socket.connect(Socket.java:609) ~[?:?]
+	at java.net.Socket.connect(Socket.java:558) ~[?:?]
+	at java.net.Socket.<init>(Socket.java:454) ~[?:?]
+	at java.net.Socket.<init>(Socket.java:231) ~[?:?]
+	at sun.rmi.transport.tcp.TCPDirectSocketFactory.createSocket(TCPDirectSocketFactory.java:40) ~[?:?]
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:617) ~[?:?]
+	... 18 more
+2025-07-25 08:30:23 JMXDataRetriever [ERROR] Error while getting JMX data
+java.rmi.ConnectIOException: Exception creating connection to: 192.168.31.65; nested exception is: 
+	java.net.SocketException: Network is unreachable (connect failed)
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:635) ~[?:?]
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:209) ~[?:?]
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:196) ~[?:?]
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:132) ~[?:?]
+	at javax.management.remote.rmi.RMIServerImpl_Stub.newClient(Unknown Source) ~[?:?]
+	at javax.management.remote.rmi.RMIConnector.getConnection(RMIConnector.java:2105) ~[?:?]
+	at javax.management.remote.rmi.RMIConnector.connect(RMIConnector.java:321) ~[?:?]
+	at javax.management.remote.JMXConnectorFactory.connect(JMXConnectorFactory.java:270) ~[?:?]
+	at javax.management.remote.JMXConnectorFactory.connect(JMXConnectorFactory.java:229) ~[?:?]
+	at org.wso2.diagnostics.utils.JMXDataRetriever.getConnection(JMXDataRetriever.java:125) [runtime-diagnostics-tool-1.0.17.jar:1.0.17]
+	at org.wso2.diagnostics.utils.JMXDataRetriever.getJmxData(JMXDataRetriever.java:92) [runtime-diagnostics-tool-1.0.17.jar:1.0.17]
+	at org.wso2.diagnostics.utils.JMXDataRetriever.getIntAttributeValue(JMXDataRetriever.java:47) [runtime-diagnostics-tool-1.0.17.jar:1.0.17]
+	at org.wso2.diagnostics.watchers.trafficanalyzer.TrafficAnalyzer.run(TrafficAnalyzer.java:66) [runtime-diagnostics-tool-1.0.17.jar:1.0.17]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: java.net.SocketException: Network is unreachable (connect failed)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[?:?]
+	at java.net.Socket.connect(Socket.java:609) ~[?:?]
+	at java.net.Socket.connect(Socket.java:558) ~[?:?]
+	at java.net.Socket.<init>(Socket.java:454) ~[?:?]
+	at java.net.Socket.<init>(Socket.java:231) ~[?:?]
+	at sun.rmi.transport.tcp.TCPDirectSocketFactory.createSocket(TCPDirectSocketFactory.java:40) ~[?:?]
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:617) ~[?:?]
+	... 18 more
+2025-07-25 08:30:23 JMXDataRetriever [ERROR] Error while getting JMX data
+java.rmi.ConnectIOException: Exception creating connection to: 192.168.31.65; nested exception is: 
+	java.net.SocketException: Network is unreachable (connect failed)
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:635) ~[?:?]
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:209) ~[?:?]
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:196) ~[?:?]
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:132) ~[?:?]
+	at javax.management.remote.rmi.RMIServerImpl_Stub.newClient(Unknown Source) ~[?:?]
+	at javax.management.remote.rmi.RMIConnector.getConnection(RMIConnector.java:2105) ~[?:?]
+	at javax.management.remote.rmi.RMIConnector.connect(RMIConnector.java:321) ~[?:?]
+	at javax.management.remote.JMXConnectorFactory.connect(JMXConnectorFactory.java:270) ~[?:?]
+	at javax.management.remote.JMXConnectorFactory.connect(JMXConnectorFactory.java:229) ~[?:?]
+	at org.wso2.diagnostics.utils.JMXDataRetriever.getConnection(JMXDataRetriever.java:125) [runtime-diagnostics-tool-1.0.17.jar:1.0.17]
+	at org.wso2.diagnostics.utils.JMXDataRetriever.getJmxData(JMXDataRetriever.java:92) [runtime-diagnostics-tool-1.0.17.jar:1.0.17]
+	at org.wso2.diagnostics.utils.JMXDataRetriever.getIntAttributeValue(JMXDataRetriever.java:47) [runtime-diagnostics-tool-1.0.17.jar:1.0.17]
+	at org.wso2.diagnostics.watchers.trafficanalyzer.TrafficAnalyzer.run(TrafficAnalyzer.java:70) [runtime-diagnostics-tool-1.0.17.jar:1.0.17]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: java.net.SocketException: Network is unreachable (connect failed)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[?:?]
+	at java.net.Socket.connect(Socket.java:609) ~[?:?]
+	at java.net.Socket.connect(Socket.java:558) ~[?:?]
+	at java.net.Socket.<init>(Socket.java:454) ~[?:?]
+	at java.net.Socket.<init>(Socket.java:231) ~[?:?]
+	at sun.rmi.transport.tcp.TCPDirectSocketFactory.createSocket(TCPDirectSocketFactory.java:40) ~[?:?]
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:617) ~[?:?]
+	... 18 more
+2025-07-25 08:30:31 LogWatcher [INFO] Log file has been rotated. Reopening the file /Users/burzumjoy/Downloads/wso2am-4.5.0/diagnostics-tool/../repository/logs/wso2-apigw-errors.log
+2025-07-25 15:54:29 MemoryWatcher [INFO] Heap usage is above threshold. Heap usage: 81.0%, Retry count: 1
+2025-07-25 15:54:34 MemoryWatcher [INFO] Heap usage is above threshold. Heap usage: 81.0%, Retry count: 2
+2025-07-25 15:54:39 MemoryWatcher [INFO] Heap usage is above threshold. Heap usage: 82.0%, Retry count: 3
+2025-07-25 15:54:50 ThreadDumper [INFO] Thread dump execution is completed for 11860, thread dump count: 5, delay: 2000ms
+2025-07-25 15:54:50 MetricsSnapshot [INFO] MetricsSnapshot executed successfully.
+2025-07-25 15:54:50 ServerInfo [INFO] ServerInfo executed successfully.
+2025-07-25 15:54:50 ZipFileExecutor [INFO] Zipping the folder at /Users/burzumjoy/Downloads/wso2am-4.5.0/diagnostics-tool/temp/2025-07-25_15:54:39.53
+2025-07-25 15:54:50 ZipFileExecutor [INFO] Diagnosis Dumped in :/Users/burzumjoy/Downloads/wso2am-4.5.0/diagnostics-tool/data/11860_2025-07-25_15:54:39.53.zip
+2025-07-25 15:54:50 MemoryWatcher [INFO] Heap usage is above threshold. Heap usage: 83.0%, Retry count: 1
+2025-07-25 15:54:50 MemoryWatcher [INFO] Heap usage is above threshold. Heap usage: 83.0%, Retry count: 2
+2025-07-25 15:54:54 MemoryWatcher [INFO] Heap usage is above threshold. Heap usage: 84.0%, Retry count: 3
+2025-07-25 15:55:05 ThreadDumper [INFO] Thread dump execution is completed for 11860, thread dump count: 5, delay: 2000ms
+2025-07-25 15:55:05 MetricsSnapshot [INFO] MetricsSnapshot executed successfully.
+2025-07-25 15:55:05 ServerInfo [INFO] ServerInfo executed successfully.
+2025-07-25 15:55:05 ZipFileExecutor [INFO] Zipping the folder at /Users/burzumjoy/Downloads/wso2am-4.5.0/diagnostics-tool/temp/2025-07-25_15:54:54.466
+2025-07-25 15:55:05 ZipFileExecutor [INFO] Diagnosis Dumped in :/Users/burzumjoy/Downloads/wso2am-4.5.0/diagnostics-tool/data/11860_2025-07-25_15:54:54.466.zip
